@@ -15,13 +15,8 @@ const subjects = {
     category: "Judicial Review",
     type: "multiple_choice",
     question: "In Marbury v. Madison, what did Chief Justice Marshall establish?",
-    options: [
-      "The Supreme Court has the power of judicial review over legislation",
-      "The President has absolute immunity for official acts",
-      "Congress has plenary police power",
-      "States can nullify federal laws"
-    ],
-    answer: 0,
+    options: ["Congress has plenary police power", "The President has absolute immunity for official acts", "States can nullify federal laws", "The Supreme Court has the power of judicial review over legislation"],
+    answer: 3,
     explanation: "Marbury v. Madison established that the Supreme Court has judicial review — the power to declare laws unconstitutional. Marshall called it 'the province and duty of the judicial department to say what the law is.'"
   },
   {
@@ -29,13 +24,8 @@ const subjects = {
     category: "Judicial Review",
     type: "multiple_choice",
     question: "Why did Marbury ultimately lose his case despite having a right to his commission?",
-    options: [
-      "The President had discretion to withhold the commission",
-      "The statute expanding the Supreme Court's original jurisdiction was unconstitutional",
-      "Marbury failed to file his claim in time",
-      "The commission was never properly signed"
-    ],
-    answer: 1,
+    options: ["The commission was never properly signed", "Marbury failed to file his claim in time", "The President had discretion to withhold the commission", "The statute expanding the Supreme Court's original jurisdiction was unconstitutional"],
+    answer: 3,
     explanation: "The Court found that the statute granting the Supreme Court original jurisdiction to issue writs of mandamus conflicted with Article III's limits on original jurisdiction, making the statute unconstitutional."
   },
   {
@@ -51,13 +41,8 @@ const subjects = {
     category: "Judicial Review",
     type: "multiple_choice",
     question: "The 'Countermajoritarian Difficulty' (Alexander Bickel) refers to:",
-    options: [
-      "The problem of states overriding federal law",
-      "Why 9 unelected judges should be able to override the will of the elected majority",
-      "The difficulty of amending the Constitution",
-      "The challenge of enforcing judicial decisions without an army"
-    ],
-    answer: 1,
+    options: ["Why 9 unelected judges should be able to override the will of the elected majority", "The challenge of enforcing judicial decisions without an army", "The difficulty of amending the Constitution", "The problem of states overriding federal law"],
+    answer: 0,
     explanation: "Bickel's Countermajoritarian Difficulty asks why unelected, life-tenured judges should have the power to prevent a majority of Americans from enacting laws through their elected representatives."
   },
   {
@@ -65,13 +50,8 @@ const subjects = {
     category: "Judicial Review",
     type: "multiple_choice",
     question: "In Cooper v. Aaron, the Court expanded judicial review by holding that:",
-    options: [
-      "Only parties to a case are bound by Supreme Court decisions",
-      "The Supreme Court's constitutional interpretations are binding on all actors, including non-parties",
-      "States can delay compliance with Supreme Court orders for safety reasons",
-      "The President can override Supreme Court decisions through executive orders"
-    ],
-    answer: 1,
+    options: ["The Supreme Court's constitutional interpretations are binding on all actors, including non-parties", "States can delay compliance with Supreme Court orders for safety reasons", "Only parties to a case are bound by Supreme Court decisions", "The President can override Supreme Court decisions through executive orders"],
+    answer: 0,
     explanation: "Cooper v. Aaron went beyond Marbury by declaring that the Supreme Court's interpretations of the Constitution are supreme and binding on all government actors — parties and non-parties alike."
   },
   {
@@ -79,13 +59,8 @@ const subjects = {
     category: "Judicial Review",
     type: "multiple_choice",
     question: "'Departmentalism' is the view that:",
-    options: [
-      "Only the judiciary can interpret the Constitution",
-      "All three branches can interpret the Constitution",
-      "Constitutional interpretation belongs solely to Congress",
-      "Each department of government operates independently without checks"
-    ],
-    answer: 1,
+    options: ["All three branches can interpret the Constitution", "Constitutional interpretation belongs solely to Congress", "Each department of government operates independently without checks", "Only the judiciary can interpret the Constitution"],
+    answer: 0,
     explanation: "Departmentalism holds that all branches of government — not just the judiciary — have the power to interpret the Constitution. This is the opposite of judicial exclusivity."
   },
 
@@ -95,13 +70,8 @@ const subjects = {
     category: "Federalism",
     type: "multiple_choice",
     question: "McCulloch v. Maryland answered two key questions. The first was whether Congress had power to create a national bank. What was the second?",
-    options: [
-      "Whether the President could veto the bank's charter",
-      "Whether Maryland could tax the national bank",
-      "Whether the bank could issue its own currency",
-      "Whether states could create competing banks"
-    ],
-    answer: 1,
+    options: ["Whether Maryland could tax the national bank", "Whether states could create competing banks", "Whether the bank could issue its own currency", "Whether the President could veto the bank's charter"],
+    answer: 0,
     explanation: "McCulloch addressed (1) Congress's power to create the bank (yes, via implied powers and Necessary & Proper Clause) and (2) whether Maryland could tax it (no — 'the power to tax is the power to destroy')."
   },
   {
@@ -117,12 +87,7 @@ const subjects = {
     category: "Federalism",
     type: "multiple_choice",
     question: "Marshall's statement 'it is a constitution we are expounding' in McCulloch means:",
-    options: [
-      "The Constitution should be read narrowly like a statute",
-      "The Constitution is a flexible document that should be read expansively",
-      "Constitutional interpretation should be left to Congress",
-      "The Constitution cannot be changed without a formal amendment"
-    ],
+    options: ["Constitutional interpretation should be left to Congress", "The Constitution is a flexible document that should be read expansively", "The Constitution should be read narrowly like a statute", "The Constitution cannot be changed without a formal amendment"],
     answer: 1,
     explanation: "Marshall argued the Constitution is different from an ordinary statute — it must be flexible and read expansively to adapt to changing circumstances, which supports broader congressional power."
   },
@@ -131,13 +96,8 @@ const subjects = {
     category: "Federalism",
     type: "multiple_choice",
     question: "In McCulloch, the Court interpreted 'necessary' in the Necessary and Proper Clause to mean:",
-    options: [
-      "Absolutely essential and indispensable",
-      "Required by the text of the Constitution",
-      "Essential OR helpful/convenient",
-      "Only what the Founders specifically intended"
-    ],
-    answer: 2,
+    options: ["Required by the text of the Constitution", "Only what the Founders specifically intended", "Absolutely essential and indispensable", "Essential OR helpful/convenient"],
+    answer: 3,
     explanation: "The Court rejected the narrow reading of 'necessary' as 'absolutely essential.' Instead, Marshall read it as meaning 'essential OR helpful,' noting that Article I, Section 10 uses 'absolutely necessary' — if the Framers had meant that here, they would have said so."
   },
 
@@ -147,13 +107,8 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "Which Commerce Clause theory holds that even if an activity isn't commerce itself, its connection to what happens before and after makes it regulable?",
-    options: [
-      "Direct Effects test",
-      "Stream of Commerce theory",
-      "Substantial Effects test",
-      "No Aggregation principle"
-    ],
-    answer: 1,
+    options: ["Direct Effects test", "Substantial Effects test", "Stream of Commerce theory", "No Aggregation principle"],
+    answer: 2,
     explanation: "The Stream of Commerce theory broadens Congress's power by treating activities as part of commerce if they occur between interstate commercial steps — like making steaks between receiving cattle and shipping the product."
   },
   {
@@ -161,13 +116,8 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "Which Commerce Clause tests did Wickard v. Filburn eliminate?",
-    options: [
-      "Stream of Commerce and Motive tests",
-      "Direct Effects and No Aggregation tests",
-      "Commerce definition and Substantial Effects tests",
-      "Motive and Stream of Commerce tests"
-    ],
-    answer: 1,
+    options: ["Commerce definition and Substantial Effects tests", "Motive and Stream of Commerce tests", "Stream of Commerce and Motive tests", "Direct Effects and No Aggregation tests"],
+    answer: 3,
     explanation: "Wickard eliminated the Direct Effects test (local activity CAN be regulated if it has substantial effects) and the No Aggregation test (creating the 'Wickard Aggregation Effect' — aggregating all similar actors nationwide)."
   },
   {
@@ -175,12 +125,7 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "After Wickard, which Commerce Clause test(s) survived?",
-    options: [
-      "Only the Commerce definition test",
-      "Substantial Effects test and Wickard Aggregation Effect",
-      "Direct Effects and No Aggregation",
-      "Stream of Commerce and Motive tests"
-    ],
+    options: ["Direct Effects and No Aggregation", "Substantial Effects test and Wickard Aggregation Effect", "Stream of Commerce and Motive tests", "Only the Commerce definition test"],
     answer: 1,
     explanation: "After Wickard, only the Substantial Effects test and the Wickard Aggregation Effect remained. This gave Congress an incredibly expansive commerce power — leading the Court to stop challenging Congress on commerce for decades."
   },
@@ -189,13 +134,8 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "Darby did away with which test regarding Congress's Commerce Clause power?",
-    options: [
-      "The Substantial Effects test",
-      "The Motive test — Congress's motive for regulation no longer matters",
-      "The Stream of Commerce test",
-      "The No Aggregation test"
-    ],
-    answer: 1,
+    options: ["The No Aggregation test", "The Stream of Commerce test", "The Motive test — Congress's motive for regulation no longer matters", "The Substantial Effects test"],
+    answer: 2,
     explanation: "Darby eliminated the Motive test. Congress's purpose for regulating doesn't matter — regulation of commerce can be a means to achieve other ends. Darby also said the 10th Amendment is merely 'a truism.'"
   },
   {
@@ -203,13 +143,8 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "In U.S. v. Lopez, the Court identified three categories Congress may regulate under the Commerce Clause. Which is NOT one of them?",
-    options: [
-      "Channels of interstate commerce",
-      "Instrumentalities, persons, or things in interstate commerce",
-      "Activities that substantially affect interstate commerce",
-      "Activities with any indirect connection to interstate commerce"
-    ],
-    answer: 3,
+    options: ["Activities with any indirect connection to interstate commerce", "Instrumentalities, persons, or things in interstate commerce", "Channels of interstate commerce", "Activities that substantially affect interstate commerce"],
+    answer: 0,
     explanation: "Lopez established three categories: (1) channels, (2) instrumentalities/persons/things, and (3) activities with a substantial relation to interstate commerce. The 'any indirect connection' standard was the pre-New Deal approach the Court rejected."
   },
   {
@@ -217,13 +152,8 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "Lopez introduced what new requirement that limited the Substantial Effects test?",
-    options: [
-      "The underlying activity being regulated must be economic in nature",
-      "Congress must have unanimous approval for the regulation",
-      "The regulation must involve international commerce",
-      "The President must sign a separate commerce finding"
-    ],
-    answer: 0,
+    options: ["The regulation must involve international commerce", "The President must sign a separate commerce finding", "Congress must have unanimous approval for the regulation", "The underlying activity being regulated must be economic in nature"],
+    answer: 3,
     explanation: "Lopez held that under Category 3 (substantial effects), the regulated activity must be economic. A gun near a school zone was not economic activity, so Congress could not regulate it under the Commerce Clause."
   },
   {
@@ -239,12 +169,7 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "In Heart of Atlanta Motel v. United States, why did the Court use the Commerce Clause rather than the Equal Protection Clause to uphold the Civil Rights Act?",
-    options: [
-      "The Equal Protection Clause only applies to state action, not private businesses",
-      "The Commerce Clause was easier to amend",
-      "The Equal Protection Clause had been repealed",
-      "The hotel was on federal land"
-    ],
+    options: ["The Equal Protection Clause only applies to state action, not private businesses", "The Commerce Clause was easier to amend", "The hotel was on federal land", "The Equal Protection Clause had been repealed"],
     answer: 0,
     explanation: "The 14th Amendment's Equal Protection Clause begins with 'no state shall' — it applies to state action, not private citizens. Since the Civil Rights Cases (1883) limited Congress's power under the 14th Amendment against private actors, the Commerce Clause provided the constitutional basis."
   },
@@ -253,13 +178,8 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "In Morrison (Violence Against Women Act), the Court struck down the law despite detailed congressional findings. What was the key reason?",
-    options: [
-      "Gender-based violence is not economic activity",
-      "Congress failed to include a jurisdictional element",
-      "The law violated the First Amendment",
-      "The findings were fabricated"
-    ],
-    answer: 0,
+    options: ["The findings were fabricated", "Gender-based violence is not economic activity", "The law violated the First Amendment", "Congress failed to include a jurisdictional element"],
+    answer: 1,
     explanation: "Despite detailed congressional findings about the effects of gender-based violence on commerce, the Court held that the underlying activity was not economic, applying the Lopez framework. The Court — not Congress — decides the federal-state line."
   },
 
@@ -269,13 +189,8 @@ const subjects = {
     category: "Spending Power",
     type: "multiple_choice",
     question: "Under South Dakota v. Dole, which is NOT one of the requirements for Congress's conditional spending?",
-    options: [
-      "Spending must be for the general welfare",
-      "Conditions must be clear and unambiguous",
-      "Conditions must be related to a federal interest",
-      "States must unanimously consent to the conditions"
-    ],
-    answer: 3,
+    options: ["Conditions must be clear and unambiguous", "States must unanimously consent to the conditions", "Conditions must be related to a federal interest", "Spending must be for the general welfare"],
+    answer: 1,
     explanation: "The Dole test requires: (1) for the general welfare, (2) clear and unambiguous conditions, (3) conditions related to a federal interest, and (4) no other constitutional bar. There is no unanimity requirement."
   },
   {
@@ -283,13 +198,8 @@ const subjects = {
     category: "Spending Power",
     type: "multiple_choice",
     question: "In NFIB v. Sebelius (the Medicaid case), why did the Court strike down the Medicaid expansion?",
-    options: [
-      "The expansion wasn't related to healthcare",
-      "Congress was essentially coercing states — a 'gun to the head' — by threatening to withdraw existing Medicaid funding",
-      "The expansion violated the Equal Protection Clause",
-      "Medicaid itself was unconstitutional"
-    ],
-    answer: 1,
+    options: ["Congress was essentially coercing states — a 'gun to the head' — by threatening to withdraw existing Medicaid funding", "Medicaid itself was unconstitutional", "The expansion wasn't related to healthcare", "The expansion violated the Equal Protection Clause"],
+    answer: 0,
     explanation: "The Court found the Medicaid expansion coercive because states would lose ALL existing Medicaid funding (about 22% of state budgets) if they refused to expand. This crossed the line from incentive to coercion — unlike Dole's 5% highway funding."
   },
   {
@@ -297,13 +207,8 @@ const subjects = {
     category: "Commandeering",
     type: "multiple_choice",
     question: "New York v. United States established that Congress cannot:",
-    options: [
-      "Offer states financial incentives",
-      "Commandeer state legislatures by ordering them to regulate according to federal instructions",
-      "Preempt state law with federal law",
-      "Tax state government activities"
-    ],
-    answer: 1,
+    options: ["Tax state government activities", "Preempt state law with federal law", "Commandeer state legislatures by ordering them to regulate according to federal instructions", "Offer states financial incentives"],
+    answer: 2,
     explanation: "New York v. U.S. established the anti-commandeering doctrine: Congress cannot force state legislatures to enact or administer a federal regulatory program. But Congress CAN use spending power incentives, give states a choice between regulation options, or preempt state law."
   },
   {
@@ -319,12 +224,7 @@ const subjects = {
     category: "Federalism",
     type: "multiple_choice",
     question: "In Garcia v. San Antonio Metropolitan Transit Authority, the Court held that:",
-    options: [
-      "The 'traditional government function' test effectively protects state sovereignty",
-      "The 'traditional government function' test is unworkable and states are protected by the political process instead",
-      "The 10th Amendment grants states absolute sovereignty",
-      "Congress has no power to regulate state employees"
-    ],
+    options: ["The 'traditional government function' test effectively protects state sovereignty", "The 'traditional government function' test is unworkable and states are protected by the political process instead", "The 10th Amendment grants states absolute sovereignty", "Congress has no power to regulate state employees"],
     answer: 1,
     explanation: "Garcia overruled National League of Cities, finding the 'traditional government function' test unworkable. Instead, the political process — not courts — should protect state sovereignty. Justice Blackmun was the key switch vote."
   },
@@ -335,13 +235,8 @@ const subjects = {
     category: "Separation of Powers",
     type: "multiple_choice",
     question: "Justice Jackson's concurrence in Youngstown created three zones of presidential power. In which zone does the President have the LEAST power?",
-    options: [
-      "Zone 1: Acting with congressional authorization",
-      "Zone 2: The 'Twilight Zone' where Congress is silent",
-      "Zone 3: Acting against Congress's express or implied will",
-      "Zone 4: Acting in foreign affairs"
-    ],
-    answer: 2,
+    options: ["Zone 1: Acting with congressional authorization", "Zone 3: Acting against Congress's express or implied will", "Zone 4: Acting in foreign affairs", "Zone 2: The 'Twilight Zone' where Congress is silent"],
+    answer: 1,
     explanation: "Jackson's Zone 3 — where the President acts incompatibly with Congress's will — is where presidential power is at its 'lowest ebb.' The Youngstown steel seizure fell in this zone because Congress had specifically declined to authorize such seizures."
   },
   {
@@ -349,13 +244,8 @@ const subjects = {
     category: "Separation of Powers",
     type: "multiple_choice",
     question: "In Youngstown, Truman's seizure of the steel mills was held unconstitutional primarily because:",
-    options: [
-      "The steel mills were foreign-owned",
-      "Congress had specifically declined to grant seizure authority, and the President's commander-in-chief power didn't extend to domestic industry",
-      "The Korean War had not been formally declared",
-      "The workers consented to the seizure"
-    ],
-    answer: 1,
+    options: ["The steel mills were foreign-owned", "The workers consented to the seizure", "The Korean War had not been formally declared", "Congress had specifically declined to grant seizure authority, and the President's commander-in-chief power didn't extend to domestic industry"],
+    answer: 3,
     explanation: "The Court held Truman lacked authority because Congress had rejected granting seizure power, the Commander-in-Chief role didn't extend to domestic steel mills, and the Take Care Clause only authorizes enforcing existing laws — not making new ones."
   },
   {
@@ -363,13 +253,8 @@ const subjects = {
     category: "Separation of Powers",
     type: "multiple_choice",
     question: "The Unitary Executive Theory holds that:",
-    options: [
-      "Congress controls all executive officers",
-      "The President has sole control over the executive branch and can remove officers at will",
-      "Executive power is shared equally among Cabinet members",
-      "The judiciary supervises executive branch operations"
-    ],
-    answer: 1,
+    options: ["The President has sole control over the executive branch and can remove officers at will", "The judiciary supervises executive branch operations", "Executive power is shared equally among Cabinet members", "Congress controls all executive officers"],
+    answer: 0,
     explanation: "The Unitary Executive Theory, dominant today after Seila Law, holds that executive power is vested in the President alone, who must be able to remove executive officers to fulfill the Take Care Clause duties."
   },
   {
@@ -377,13 +262,8 @@ const subjects = {
     category: "Separation of Powers",
     type: "multiple_choice",
     question: "In Trump v. United States, the Court created a three-tier framework for presidential immunity. Which tier provides absolute immunity?",
-    options: [
-      "All official acts while in office",
-      "Conclusive and preclusive constitutional powers of the President",
-      "Acts within the outer perimeter of presidential responsibility",
-      "Campaign-related activities"
-    ],
-    answer: 1,
+    options: ["Acts within the outer perimeter of presidential responsibility", "Campaign-related activities", "All official acts while in office", "Conclusive and preclusive constitutional powers of the President"],
+    answer: 3,
     explanation: "The framework: (1) Absolute immunity for conclusive/preclusive constitutional powers, (2) Presumptive immunity for acts within the outer perimeter of responsibility, (3) No immunity for unofficial acts. The Court also barred juries from considering official acts."
   },
   {
@@ -391,13 +271,8 @@ const subjects = {
     category: "Separation of Powers",
     type: "multiple_choice",
     question: "In the 'Decision of 1789,' Madison's position on removal power was that:",
-    options: [
-      "Only impeachment could remove officers",
-      "The Senate should play a role in removal",
-      "The President must be able to fire people because executive power is vested in the President",
-      "Congress gets to allocate removal power through the Necessary and Proper Clause"
-    ],
-    answer: 2,
+    options: ["The President must be able to fire people because executive power is vested in the President", "Only impeachment could remove officers", "The Senate should play a role in removal", "Congress gets to allocate removal power through the Necessary and Proper Clause"],
+    answer: 0,
     explanation: "Madison argued (Camp 3) that because the Vesting Clause places executive power in the President, and the Take Care Clause requires faithful execution of laws, the President needs the power to remove executive officers."
   },
 
@@ -407,13 +282,8 @@ const subjects = {
     category: "Interpretation",
     type: "multiple_choice",
     question: "Which theory of constitutional interpretation holds that the Constitution's meaning changes as society evolves?",
-    options: [
-      "Originalism",
-      "Textualism",
-      "Living Constitutionalism",
-      "Positivism"
-    ],
-    answer: 2,
+    options: ["Textualism", "Positivism", "Originalism", "Living Constitutionalism"],
+    answer: 3,
     explanation: "Living Constitutionalism (associated with Thurgood Marshall) holds that the Constitution's meaning evolves with society. This contrasts with Originalism (associated with Scalia), which seeks to fix meaning at the time of ratification."
   },
   {
@@ -421,13 +291,8 @@ const subjects = {
     category: "Interpretation",
     type: "multiple_choice",
     question: "The 'dead hand' theory critique argues:",
-    options: [
-      "The Constitution should be interpreted by judges, not legislators",
-      "Past generations should not dictate how present generations are governed",
-      "The framers deliberately left the Constitution vague",
-      "Constitutional amendments are too difficult to pass"
-    ],
-    answer: 1,
+    options: ["Constitutional amendments are too difficult to pass", "The framers deliberately left the Constitution vague", "Past generations should not dictate how present generations are governed", "The Constitution should be interpreted by judges, not legislators"],
+    answer: 2,
     explanation: "The 'dead hand' critique questions why people who lived centuries ago should control present governance. Living constitutionalists use this to argue for evolving interpretation, while originalists respond that the amendment process exists for change."
   },
   {
@@ -435,13 +300,8 @@ const subjects = {
     category: "Interpretation",
     type: "multiple_choice",
     question: "Compatibilism in constitutional interpretation holds that:",
-    options: [
-      "The Constitution should only be interpreted by its original meaning",
-      "We should interpret the document historically but apply it taking into account today's realities",
-      "All interpretive methods are equally invalid",
-      "Only the text matters, never history or policy"
-    ],
-    answer: 1,
+    options: ["We should interpret the document historically but apply it taking into account today's realities", "Only the text matters, never history or policy", "The Constitution should only be interpreted by its original meaning", "All interpretive methods are equally invalid"],
+    answer: 0,
     explanation: "Compatibilism bridges originalism and living constitutionalism: interpret the document historically, then apply those principles accounting for modern realities. This avoids the extremes of both approaches."
   },
   {
@@ -449,12 +309,7 @@ const subjects = {
     category: "Interpretation",
     type: "multiple_choice",
     question: "Iredell's position (positivism) in Calder v. Bull was that:",
-    options: [
-      "Natural rights exist beyond what's written in the Constitution",
-      "The Constitution is the written document and nothing more",
-      "Judges should interpret the Constitution based on moral principles",
-      "The Constitution should change with the times"
-    ],
+    options: ["The Constitution should change with the times", "The Constitution is the written document and nothing more", "Natural rights exist beyond what's written in the Constitution", "Judges should interpret the Constitution based on moral principles"],
     answer: 1,
     explanation: "Iredell took the positivist view: the Constitution is the text and nothing more. This contrasted with Chase's natural law view that there are rights beyond the written document — setting up a debate that persists today."
   },
@@ -465,12 +320,7 @@ const subjects = {
     category: "Individual Rights",
     type: "multiple_choice",
     question: "Barron v. Baltimore held that the Bill of Rights:",
-    options: [
-      "Applies to both state and federal governments",
-      "Applies only to the federal government, not the states",
-      "Is merely advisory and non-binding",
-      "Can be overridden by state constitutions"
-    ],
+    options: ["Applies to both state and federal governments", "Applies only to the federal government, not the states", "Is merely advisory and non-binding", "Can be overridden by state constitutions"],
     answer: 1,
     explanation: "Barron held that the Bill of Rights restricts only the federal government, not the states. This was later changed through the doctrine of incorporation under the 14th Amendment's Due Process Clause."
   },
@@ -479,13 +329,8 @@ const subjects = {
     category: "Individual Rights",
     type: "multiple_choice",
     question: "Selective Incorporation (the modern framework) holds that:",
-    options: [
-      "All of the Bill of Rights applies to the states",
-      "None of the Bill of Rights applies to the states",
-      "Rights that are historically part of our system of justice and necessary to it are incorporated against the states through the 14th Amendment",
-      "Only the First Amendment applies to the states"
-    ],
-    answer: 2,
+    options: ["Rights that are historically part of our system of justice and necessary to it are incorporated against the states through the 14th Amendment", "All of the Bill of Rights applies to the states", "Only the First Amendment applies to the states", "None of the Bill of Rights applies to the states"],
+    answer: 0,
     explanation: "Selective Incorporation (Brennan's approach, now dominant) incorporates most — but not all — Bill of Rights protections against the states through the 14th Amendment's Due Process Clause. Exceptions include the grand jury requirement and quartering of soldiers."
   },
   {
@@ -493,13 +338,8 @@ const subjects = {
     category: "Individual Rights",
     type: "multiple_choice",
     question: "Justice Black's 'Total Incorporation' theory held that:",
-    options: [
-      "Only selected rights apply to the states",
-      "All of the Bill of Rights (Amendments 1-8) apply to the states, but only those enumerated rights",
-      "Natural rights beyond the text should also be incorporated",
-      "The Bill of Rights applies only to the federal government"
-    ],
-    answer: 1,
+    options: ["Only selected rights apply to the states", "The Bill of Rights applies only to the federal government", "Natural rights beyond the text should also be incorporated", "All of the Bill of Rights (Amendments 1-8) apply to the states, but only those enumerated rights"],
+    answer: 3,
     explanation: "Black's Total Incorporation was textualist: ALL of the Bill of Rights (1-8) apply to the states, but ONLY those listed rights — no unenumerated rights. This was ultimately rejected in favor of Selective Incorporation."
   },
   {
@@ -517,12 +357,7 @@ const subjects = {
     category: "Reconstruction",
     type: "multiple_choice",
     question: "Dred Scott v. Sandford held that:",
-    options: [
-      "Enslaved people were citizens with full rights",
-      "The Missouri Compromise was constitutional",
-      "Black Americans could not be citizens, and Congress could not abolish slavery without a constitutional amendment",
-      "States had the power to free enslaved people crossing their borders"
-    ],
+    options: ["Enslaved people were citizens with full rights", "The Missouri Compromise was constitutional", "Black Americans could not be citizens, and Congress could not abolish slavery without a constitutional amendment", "States had the power to free enslaved people crossing their borders"],
     answer: 2,
     explanation: "Dred Scott held that Black Americans (free or enslaved) could not be citizens, the Missouri Compromise was unconstitutional (depriving citizens of property under the 5th Amendment), and Congress could not abolish slavery short of an amendment."
   },
@@ -531,13 +366,8 @@ const subjects = {
     category: "Reconstruction",
     type: "multiple_choice",
     question: "The Slaughterhouse Cases effectively destroyed which constitutional provision?",
-    options: [
-      "The Commerce Clause",
-      "The Privileges and Immunities Clause of the 14th Amendment",
-      "The Equal Protection Clause",
-      "The Necessary and Proper Clause"
-    ],
-    answer: 1,
+    options: ["The Privileges and Immunities Clause of the 14th Amendment", "The Necessary and Proper Clause", "The Commerce Clause", "The Equal Protection Clause"],
+    answer: 0,
     explanation: "Slaughterhouse drew a distinction between rights of U.S. citizenship and state citizenship, gutting the Privileges and Immunities Clause. Historians believe this clause was meant to be the primary vehicle for protecting fundamental rights."
   },
   {
@@ -545,13 +375,8 @@ const subjects = {
     category: "Reconstruction",
     type: "multiple_choice",
     question: "The Civil Rights Cases (1883) held that the 14th Amendment does NOT empower Congress to:",
-    options: [
-      "Regulate state governments",
-      "Regulate the conduct of private citizens",
-      "Pass any civil rights legislation",
-      "Enforce the Equal Protection Clause against states"
-    ],
-    answer: 1,
+    options: ["Regulate the conduct of private citizens", "Pass any civil rights legislation", "Regulate state governments", "Enforce the Equal Protection Clause against states"],
+    answer: 0,
     explanation: "The Court held that the 14th Amendment's 'no state shall' language means Congress can only regulate STATE action, not private discrimination. This is why later civil rights laws relied on the Commerce Clause instead."
   },
   {
@@ -569,13 +394,8 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "Plessy v. Ferguson established what doctrine?",
-    options: [
-      "Colorblind constitution",
-      "Separate but equal",
-      "Strict scrutiny for racial classifications",
-      "De facto segregation is unconstitutional"
-    ],
-    answer: 1,
+    options: ["Separate but equal", "Strict scrutiny for racial classifications", "De facto segregation is unconstitutional", "Colorblind constitution"],
+    answer: 0,
     explanation: "Plessy upheld racial segregation under the 'separate but equal' doctrine, using a deferential reasonableness standard. Justice Harlan famously dissented that 'the Constitution is colorblind.'"
   },
   {
@@ -583,13 +403,8 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "Brown v. Board of Education overruled Plessy primarily on what grounds?",
-    options: [
-      "Historical evidence proved the framers intended integration",
-      "Segregation in public education is inherently unequal due to the stigma it creates",
-      "The Commerce Clause required integrated schools",
-      "Plessy was based on incorrect statistical data"
-    ],
-    answer: 1,
+    options: ["Segregation in public education is inherently unequal due to the stigma it creates", "Historical evidence proved the framers intended integration", "The Commerce Clause required integrated schools", "Plessy was based on incorrect statistical data"],
+    answer: 0,
     explanation: "Brown held that segregation in public education generates a feeling of inferiority that affects children's motivation to learn — 'separate educational facilities are inherently unequal.' The Court used a living constitution approach, focusing on the importance of education today."
   },
   {
@@ -597,13 +412,8 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "Brown II ordered desegregation:",
-    options: [
-      "Immediately, within 30 days",
-      "With 'all deliberate speed' — no firm deadline",
-      "Only in Southern states",
-      "Only for high schools, not elementary schools"
-    ],
-    answer: 1,
+    options: ["Immediately, within 30 days", "Only in Southern states", "With 'all deliberate speed' — no firm deadline", "Only for high schools, not elementary schools"],
+    answer: 2,
     explanation: "Brown II's 'all deliberate speed' language was intentionally vague and set no deadline. Enforcement was left to district courts. The result was massive resistance, token compliance, and some states closing public schools entirely."
   },
   {
@@ -611,13 +421,8 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "Shelley v. Kraemer held that racially restrictive covenants are:",
-    options: [
-      "Unconstitutional on their face",
-      "Enforceable only between willing parties",
-      "Not unconstitutional themselves, but judicial enforcement of them constitutes state action violating the Equal Protection Clause",
-      "Only enforceable in Southern states"
-    ],
-    answer: 2,
+    options: ["Enforceable only between willing parties", "Unconstitutional on their face", "Only enforceable in Southern states", "Not unconstitutional themselves, but judicial enforcement of them constitutes state action violating the Equal Protection Clause"],
+    answer: 3,
     explanation: "The covenants themselves weren't unconstitutional (private action), but when courts enforce them, that constitutes state action — meeting the 14th Amendment's 'no state shall' requirement. This was a very realist opinion."
   },
   {
@@ -625,12 +430,7 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "In Loving v. Virginia, the Court applied what standard of review to Virginia's ban on interracial marriage?",
-    options: [
-      "Rational basis review",
-      "Intermediate scrutiny",
-      "Strict scrutiny — racial classifications require the most rigid scrutiny",
-      "No standard was applied"
-    ],
+    options: ["No standard was applied", "Intermediate scrutiny", "Strict scrutiny — racial classifications require the most rigid scrutiny", "Rational basis review"],
     answer: 2,
     explanation: "Loving applied strict scrutiny to racial classifications, requiring a compelling government interest and narrow tailoring. The Court found Virginia's claim of 'racial integrity' was just a cover for white supremacy."
   },
@@ -639,12 +439,7 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "Washington v. Davis held that to trigger strict scrutiny under the Equal Protection Clause, a plaintiff must show:",
-    options: [
-      "Disparate impact alone is sufficient",
-      "Discriminatory intent — disparate impact alone is not enough",
-      "Statistical evidence of unequal outcomes",
-      "A history of discrimination in the jurisdiction"
-    ],
+    options: ["A history of discrimination in the jurisdiction", "Discriminatory intent — disparate impact alone is not enough", "Disparate impact alone is sufficient", "Statistical evidence of unequal outcomes"],
     answer: 1,
     explanation: "Washington v. Davis established that mere disparate impact does not trigger strict scrutiny. Discriminatory intent or a facial racial classification is required. Without intent, only rational basis review applies."
   },
@@ -653,12 +448,7 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "The anti-classification approach to equal protection holds that:",
-    options: [
-      "Government should consider race to remedy past discrimination",
-      "Any racial classification by government is presumptively wrong — the government should be colorblind",
-      "Classifications are acceptable if they help subordinated groups",
-      "Only intentional discrimination against minorities should be scrutinized"
-    ],
+    options: ["Classifications are acceptable if they help subordinated groups", "Any racial classification by government is presumptively wrong — the government should be colorblind", "Government should consider race to remedy past discrimination", "Only intentional discrimination against minorities should be scrutinized"],
     answer: 1,
     explanation: "Anti-classification (also called colorblindness) holds that all racial classifications are presumptively unconstitutional, regardless of whether they help or hurt minorities. This is the dominant position today after SFFA."
   },
@@ -669,12 +459,7 @@ const subjects = {
     category: "Affirmative Action",
     type: "multiple_choice",
     question: "In Grutter v. Bollinger, the Court upheld Michigan Law School's affirmative action program because:",
-    options: [
-      "Racial quotas are always constitutional",
-      "Diversity in higher education is a compelling interest, and holistic, individualized review is narrowly tailored",
-      "The Commerce Clause authorized it",
-      "The school had a judicial finding of past discrimination"
-    ],
+    options: ["The school had a judicial finding of past discrimination", "Diversity in higher education is a compelling interest, and holistic, individualized review is narrowly tailored", "The Commerce Clause authorized it", "Racial quotas are always constitutional"],
     answer: 1,
     explanation: "Grutter upheld affirmative action in higher education, finding diversity a compelling interest (from Bakke). The law school's holistic review — considering race as one factor among many without quotas — was narrowly tailored."
   },
@@ -683,13 +468,8 @@ const subjects = {
     category: "Affirmative Action",
     type: "multiple_choice",
     question: "In SFFA v. Harvard (2023), the Court effectively ended affirmative action by finding that Harvard's program:",
-    options: [
-      "Used racial quotas",
-      "Failed because its diversity goals were too amorphous, unmeasurable, and involved racial stereotyping",
-      "Violated the Commerce Clause",
-      "Was not authorized by Congress"
-    ],
-    answer: 1,
+    options: ["Was not authorized by Congress", "Used racial quotas", "Violated the Commerce Clause", "Failed because its diversity goals were too amorphous, unmeasurable, and involved racial stereotyping"],
+    answer: 3,
     explanation: "SFFA raised the bar on compelling interest (must be measurable), held that race can never be only a positive factor (zero-sum), and found the admissions process engaged in stereotyping. Grutter was not explicitly overruled but was effectively gutted."
   },
   {
@@ -705,13 +485,8 @@ const subjects = {
     category: "Affirmative Action",
     type: "multiple_choice",
     question: "In Parents Involved, whose opinion controls?",
-    options: [
-      "Roberts's plurality opinion",
-      "Kennedy's concurrence — as the narrower opinion in a plurality",
-      "Breyer's dissent",
-      "Thomas's concurrence"
-    ],
-    answer: 1,
+    options: ["Kennedy's concurrence — as the narrower opinion in a plurality", "Roberts's plurality opinion", "Thomas's concurrence", "Breyer's dissent"],
+    answer: 0,
     explanation: "With no majority, Kennedy's concurrence controls as the narrowest ground. Kennedy allowed race-conscious policies (like school siting and redistricting) but not individual race-based assignments."
   },
 
@@ -721,13 +496,8 @@ const subjects = {
     category: "Due Process",
     type: "multiple_choice",
     question: "Lochner v. New York struck down a maximum hours law for bakers on what basis?",
-    options: [
-      "The Commerce Clause didn't authorize it",
-      "The law violated a fundamental right to contract found in the 14th Amendment's Due Process Clause",
-      "The law violated the Equal Protection Clause",
-      "The state lacked police power"
-    ],
-    answer: 1,
+    options: ["The law violated the Equal Protection Clause", "The Commerce Clause didn't authorize it", "The state lacked police power", "The law violated a fundamental right to contract found in the 14th Amendment's Due Process Clause"],
+    answer: 3,
     explanation: "Lochner found an unenumerated right to contract in the 14th Amendment's Due Process Clause (substantive due process). The Court held the bakery hours law was really a labor regulation, not a legitimate health measure."
   },
   {
@@ -735,12 +505,7 @@ const subjects = {
     category: "Due Process",
     type: "multiple_choice",
     question: "The Lochner Court identified two problems with the maximum hours law:",
-    options: [
-      "Federalism and the Supremacy Clause",
-      "Paternalism (bakers can take care of themselves) and redistribution (taking from employers to give to employees)",
-      "Free speech and assembly concerns",
-      "Lack of congressional authorization and presidential approval"
-    ],
+    options: ["Lack of congressional authorization and presidential approval", "Paternalism (bakers can take care of themselves) and redistribution (taking from employers to give to employees)", "Free speech and assembly concerns", "Federalism and the Supremacy Clause"],
     answer: 1,
     explanation: "Lochner's majority had two objections: (1) Paternalism — bakers are 'sui juris' and don't need protection, and (2) Redistribution — the law takes from employers (or other workers) and gives to the regulated workers."
   },
@@ -749,13 +514,8 @@ const subjects = {
     category: "Due Process",
     type: "multiple_choice",
     question: "In West Coast Hotel v. Parrish (1937), the Court upheld a minimum wage law for women, effectively ending the Lochner era by:",
-    options: [
-      "Holding that freedom of contract is not in the Constitution and recognizing women's unequal bargaining power",
-      "Finding that women are biologically different from men",
-      "Declaring the 14th Amendment applies only to race",
-      "Ruling that the 19th Amendment eliminated all sex-based differences"
-    ],
-    answer: 0,
+    options: ["Finding that women are biologically different from men", "Declaring the 14th Amendment applies only to race", "Holding that freedom of contract is not in the Constitution and recognizing women's unequal bargaining power", "Ruling that the 19th Amendment eliminated all sex-based differences"],
+    answer: 2,
     explanation: "West Coast Hotel took a realist view: freedom of contract isn't in the Constitution, and women have unequal market bargaining power. This overruled Adkins and marked the end of Lochner-era economic substantive due process."
   },
   {
@@ -763,13 +523,8 @@ const subjects = {
     category: "Due Process",
     type: "multiple_choice",
     question: "Williamson v. Lee Optical is significant because the Court:",
-    options: [
-      "Applied strict scrutiny to economic regulation",
-      "Used 'might have' and 'may have' language, deferring entirely to the legislature under rational basis review",
-      "Struck down the optical regulation as unreasonable",
-      "Required the legislature to provide factual findings"
-    ],
-    answer: 1,
+    options: ["Required the legislature to provide factual findings", "Applied strict scrutiny to economic regulation", "Used 'might have' and 'may have' language, deferring entirely to the legislature under rational basis review", "Struck down the optical regulation as unreasonable"],
+    answer: 2,
     explanation: "Lee Optical represents the modern approach: the Court uses 'might/may have concluded' language, fully deferring to the legislature. The Court has not struck down a law for economic substantive due process since 1936."
   },
 
@@ -779,13 +534,8 @@ const subjects = {
     category: "Standards of Review",
     type: "multiple_choice",
     question: "Under strict scrutiny, the government must show:",
-    options: [
-      "A legitimate interest and rationally related means",
-      "An important interest and substantially related means",
-      "A compelling interest and narrowly tailored means",
-      "Any rational basis for the classification"
-    ],
-    answer: 2,
+    options: ["An important interest and substantially related means", "A compelling interest and narrowly tailored means", "Any rational basis for the classification", "A legitimate interest and rationally related means"],
+    answer: 1,
     explanation: "Strict scrutiny (applied to racial classifications and fundamental rights) requires a compelling government interest and narrowly tailored means — the highest level of review."
   },
   {
@@ -793,12 +543,7 @@ const subjects = {
     category: "Standards of Review",
     type: "multiple_choice",
     question: "Intermediate scrutiny applies to classifications based on:",
-    options: [
-      "Race and national origin",
-      "Sex/gender",
-      "Economic activity",
-      "Age and disability"
-    ],
+    options: ["Age and disability", "Sex/gender", "Economic activity", "Race and national origin"],
     answer: 1,
     explanation: "Intermediate scrutiny (from Craig v. Boren) applies to sex-based classifications, requiring an important government interest and substantially related means."
   },
@@ -807,13 +552,8 @@ const subjects = {
     category: "Standards of Review",
     type: "multiple_choice",
     question: "Carolene Products Footnote 4 suggests heightened judicial scrutiny may be appropriate in which situations?",
-    options: [
-      "Only economic regulation cases",
-      "When legislation restricts Bill of Rights, interferes with political processes, or targets discrete and insular minorities",
-      "Only cases involving foreign affairs",
-      "Any case the Court deems politically important"
-    ],
-    answer: 1,
+    options: ["When legislation restricts Bill of Rights, interferes with political processes, or targets discrete and insular minorities", "Any case the Court deems politically important", "Only cases involving foreign affairs", "Only economic regulation cases"],
+    answer: 0,
     explanation: "Footnote 4 identifies three situations for heightened scrutiny: (1) legislation restricting Bill of Rights, (2) interference with political processes, and (3) laws directed at religious, racial, or other 'discrete and insular minorities.'"
   },
 
@@ -823,13 +563,8 @@ const subjects = {
     category: "Sex Discrimination",
     type: "multiple_choice",
     question: "Craig v. Boren (1976) is important because it:",
-    options: [
-      "Applied strict scrutiny to sex classifications",
-      "Created intermediate scrutiny as the standard for sex-based classifications",
-      "Held that sex discrimination violates the Commerce Clause",
-      "Required an Equal Rights Amendment before sex could receive heightened scrutiny"
-    ],
-    answer: 1,
+    options: ["Applied strict scrutiny to sex classifications", "Required an Equal Rights Amendment before sex could receive heightened scrutiny", "Held that sex discrimination violates the Commerce Clause", "Created intermediate scrutiny as the standard for sex-based classifications"],
+    answer: 3,
     explanation: "Craig v. Boren established intermediate scrutiny for sex-based classifications: the government must show an important interest and substantially related means. This was the first time the Court formally applied a standard between rational basis and strict scrutiny."
   },
   {
@@ -837,13 +572,8 @@ const subjects = {
     category: "Sex Discrimination",
     type: "multiple_choice",
     question: "In United States v. Virginia (VMI case), Justice Ginsburg required an 'exceedingly persuasive' justification, which:",
-    options: [
-      "Is identical to rational basis review",
-      "Pushes intermediate scrutiny closer to strict scrutiny",
-      "Is a brand new standard replacing all three tiers",
-      "Only applies to military schools"
-    ],
-    answer: 1,
+    options: ["Is identical to rational basis review", "Is a brand new standard replacing all three tiers", "Only applies to military schools", "Pushes intermediate scrutiny closer to strict scrutiny"],
+    answer: 3,
     explanation: "Ginsburg's 'exceedingly persuasive justification' language appeared to heighten intermediate scrutiny for sex classifications, pushing it closer to strict scrutiny. She also required the government's ACTUAL justification, not post-hoc rationalizations."
   },
   {
@@ -851,13 +581,8 @@ const subjects = {
     category: "Sex Discrimination",
     type: "multiple_choice",
     question: "In Nguyen v. INS, the Court upheld different citizenship requirements for children of citizen mothers vs. citizen fathers because:",
-    options: [
-      "It was based on racial differences",
-      "It was based on 'real' reproductive differences — mothers have biological proof of parentage at birth",
-      "The law treated men and women identically",
-      "The 14th Amendment doesn't apply to immigration"
-    ],
-    answer: 1,
+    options: ["The 14th Amendment doesn't apply to immigration", "It was based on racial differences", "The law treated men and women identically", "It was based on 'real' reproductive differences — mothers have biological proof of parentage at birth"],
+    answer: 3,
     explanation: "The Court found the law was based on real biological differences: mothers have proof of parentage at birth while fathers may not. The two interests were (1) biological relationship and (2) opportunity to develop an actual relationship."
   },
 
@@ -867,13 +592,8 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "Korematsu v. United States is significant for establishing what standard, even though the Court upheld the Japanese internment?",
-    options: [
-      "Rational basis review",
-      "Intermediate scrutiny",
-      "Strict scrutiny / 'most rigid scrutiny' for racial classifications",
-      "The political question doctrine"
-    ],
-    answer: 2,
+    options: ["Rational basis review", "The political question doctrine", "Intermediate scrutiny", "Strict scrutiny / 'most rigid scrutiny' for racial classifications"],
+    answer: 3,
     explanation: "Despite upholding internment, Korematsu announced that racial classifications are subject to 'the most rigid scrutiny.' Justice Jackson's dissent warned the Court was setting dangerous precedent. The case was later overruled by SFFA."
   },
   {
@@ -881,12 +601,7 @@ const subjects = {
     category: "Equal Protection",
     type: "multiple_choice",
     question: "The distinction between 'de jure' and 'de facto' segregation is:",
-    options: [
-      "De jure is private, de facto is governmental",
-      "De jure is segregation by law; de facto is segregation resulting from factors other than law",
-      "Both terms mean the same thing",
-      "De jure applies only to schools; de facto applies to housing"
-    ],
+    options: ["De jure is private, de facto is governmental", "De jure is segregation by law; de facto is segregation resulting from factors other than law", "Both terms mean the same thing", "De jure applies only to schools; de facto applies to housing"],
     answer: 1,
     explanation: "De jure segregation is imposed by law (state action). De facto segregation results from private choices, economic factors, and housing patterns. The Constitution clearly prohibits de jure; whether it requires remedying de facto is debated."
   },
@@ -897,13 +612,8 @@ const subjects = {
     category: "Interpretation",
     type: "multiple_choice",
     question: "Legal formalism views the law as:",
-    options: [
-      "A tool of social engineering that should be evaluated by its real-world effects",
-      "A logical, coherent system with correct answers, like math and science",
-      "Always indeterminate and subject to manipulation",
-      "Only meaningful in its historical context"
-    ],
-    answer: 1,
+    options: ["A logical, coherent system with correct answers, like math and science", "Always indeterminate and subject to manipulation", "Only meaningful in its historical context", "A tool of social engineering that should be evaluated by its real-world effects"],
+    answer: 0,
     explanation: "Formalism treats law as a logical, internally coherent system with deterministic right answers. Realism, by contrast, recognizes that most hard cases involve policy judgments and that the law should be evaluated by what it actually does in the real world."
   },
   {
@@ -911,13 +621,8 @@ const subjects = {
     category: "Due Process",
     type: "multiple_choice",
     question: "What is the significance of the 'Political Process Theory' (John Hart Ely)?",
-    options: [
-      "Courts should never interfere with legislation",
-      "Courts should police the democratic process to ensure it's working, especially to protect minority rights",
-      "Only Congress can interpret the Constitution",
-      "Courts should defer to the executive on all matters"
-    ],
-    answer: 1,
+    options: ["Only Congress can interpret the Constitution", "Courts should defer to the executive on all matters", "Courts should police the democratic process to ensure it's working, especially to protect minority rights", "Courts should never interfere with legislation"],
+    answer: 2,
     explanation: "Ely's Political Process Theory (from 'Democracy and Distrust') holds that judicial review is justified when courts police the political process itself — ensuring it's fair and protecting minorities who can't protect themselves through democratic channels."
   },
 
@@ -927,13 +632,8 @@ const subjects = {
     category: "Commerce Clause",
     type: "multiple_choice",
     question: "In NFIB v. Sebelius (ACA case), Chief Justice Roberts held that the individual mandate was NOT valid under the Commerce Clause because:",
-    options: [
-      "Healthcare is not economic activity",
-      "Congress can regulate activity but not compel inactivity — it cannot force people to buy insurance",
-      "The mandate was too narrowly tailored",
-      "Healthcare is a state matter under the 10th Amendment"
-    ],
-    answer: 1,
+    options: ["Healthcare is a state matter under the 10th Amendment", "Healthcare is not economic activity", "The mandate was too narrowly tailored", "Congress can regulate activity but not compel inactivity — it cannot force people to buy insurance"],
+    answer: 3,
     explanation: "Roberts drew a line between regulating existing activity and compelling people to engage in commerce. The mandate tried to 'create' commercial activity (forcing purchases), which crossed the line. However, Roberts upheld it as a valid exercise of the taxing power."
   },
   {
@@ -950,59 +650,59 @@ const subjects = {
     emoji: "🏠",
     color: "#059669",
     questions: [
-  {id:1,category:"Property Theory",type:"multiple_choice",question:"Blackstone's view of property is best described as:",options:["Property is a bundle of rights created by government","Property comes from natural law and involves the right to exclude","Property is whatever the court says it is","Property is purely about economic efficiency"],answer:1,explanation:"Blackstone held that property comes from natural law and God, is defined by nature, and centers on exclusion — no one, including the government, can intervene. This is a highly libertarian, formalist view."},
-  {id:2,category:"Property Theory",type:"multiple_choice",question:"Legal Realists like Robert Hale view property as:",options:["Natural rights that preexist government","A bundle of rights where government determines and shapes property rights","Purely about the right to exclude","Fixed categories defined by nature"],answer:1,explanation:"Legal Realists see property as created by government and society, not nature. Hale argued that the government is always involved in property distribution — there is no escape from government in property law."},
-  {id:3,category:"Property Theory",type:"multiple_choice",question:"The 'New Essentialists' (Merrill & Smith) argue that property is primarily about:",options:["Redistribution of wealth","Exclusion, but from a positivist (not natural law) perspective that allows contextual determinations","Whatever the legislature says","Pure contract rights"],answer:1,explanation:"Merrill & Smith hold that property is mainly about exclusion, but unlike Blackstone, they are positivists — law is created by the state. They allow for contextual determinations and government intervention while arguing property should have a definable essence."},
-  {id:4,category:"Property Theory",type:"multiple_choice",question:"Robert Hale's key insight about property and coercion is that:",options:["Only government can coerce","Property rights exist in the shadow of government intervention — both sides use state-backed coercion","Coercion only exists in criminal law","The market is a natural, government-free institution"],answer:1,explanation:"Hale argued property rights are always shaped by government. Both owners and workers use state-backed coercive power. The government either takes over decision-making or defers to the owner — either way you cannot escape the government."},
-  {id:5,category:"Property Theory",type:"multiple_choice",question:"The 'constitutive' vs. 'instrumental' distinction means:",options:["Whether property is real or personal","Whether an object is fundamental to identity (constitutive) or merely useful for goals (instrumental)","Whether property was acquired by purchase or gift","Whether the government created the right"],answer:1,explanation:"A grandmother's brooch may be constitutive — part of who you are. A bus ticket is instrumental — it facilitates something. This matters for connection-based theories of property."},
-  {id:6,category:"Acquisition",type:"multiple_choice",question:"In Pierson v. Post, the majority held that property in a wild animal requires:",options:["Mere pursuit","A reasonable prospect of capture","Actual capture, mortal wounding, or maiming plus pursuit (occupancy)","Ownership of the land where the animal is found"],answer:2,explanation:"The majority required 'occupancy' — actual capture, mortal wounding, or maiming with continued pursuit. Mere pursuit was insufficient."},
-  {id:7,category:"Acquisition",type:"multiple_choice",question:"The dissent in Pierson v. Post argued for a different standard primarily based on:",options:["Natural law principles","Custom among hunters, public policy (foxes are pests), and desert/effort theory","The Constitution's property clause","International treaties"],answer:1,explanation:"Livingston's dissent relied on hunter customs, utilitarian public policy (foxes are bad), and desert-effort theory (Post did the hard work). He would have used a 'reasonable prospect of capture' standard."},
-  {id:8,category:"Acquisition",type:"multiple_choice",question:"In Johnson v. M'Intosh, the Doctrine of Discovery meant:",options:["First European nation to discover land got title; Native Americans kept possession/use but not full title or right to transfer","Whoever physically occupied land first owned it","Native Americans had no rights whatsoever","The land belonged to whoever could defend it"],answer:0,explanation:"Discovery gave the discovering European nation title; Native Americans retained possession and use but could not transfer title to anyone other than the discovering sovereign."},
+  {id:1,category:"Property Theory",type:"multiple_choice",question:"Blackstone's view of property is best described as:",options:["Property comes from natural law and involves the right to exclude", "Property is whatever the court says it is", "Property is purely about economic efficiency", "Property is a bundle of rights created by government"],answer:0,explanation:"Blackstone held that property comes from natural law and God, is defined by nature, and centers on exclusion — no one, including the government, can intervene. This is a highly libertarian, formalist view."},
+  {id:2,category:"Property Theory",type:"multiple_choice",question:"Legal Realists like Robert Hale view property as:",options:["Fixed categories defined by nature", "Purely about the right to exclude", "Natural rights that preexist government", "A bundle of rights where government determines and shapes property rights"],answer:3,explanation:"Legal Realists see property as created by government and society, not nature. Hale argued that the government is always involved in property distribution — there is no escape from government in property law."},
+  {id:3,category:"Property Theory",type:"multiple_choice",question:"The 'New Essentialists' (Merrill & Smith) argue that property is primarily about:",options:["Exclusion, but from a positivist (not natural law) perspective that allows contextual determinations", "Pure contract rights", "Redistribution of wealth", "Whatever the legislature says"],answer:0,explanation:"Merrill & Smith hold that property is mainly about exclusion, but unlike Blackstone, they are positivists — law is created by the state. They allow for contextual determinations and government intervention while arguing property should have a definable essence."},
+  {id:4,category:"Property Theory",type:"multiple_choice",question:"Robert Hale's key insight about property and coercion is that:",options:["Only government can coerce", "Property rights exist in the shadow of government intervention — both sides use state-backed coercion", "The market is a natural, government-free institution", "Coercion only exists in criminal law"],answer:1,explanation:"Hale argued property rights are always shaped by government. Both owners and workers use state-backed coercive power. The government either takes over decision-making or defers to the owner — either way you cannot escape the government."},
+  {id:5,category:"Property Theory",type:"multiple_choice",question:"The 'constitutive' vs. 'instrumental' distinction means:",options:["Whether the government created the right", "Whether property is real or personal", "Whether property was acquired by purchase or gift", "Whether an object is fundamental to identity (constitutive) or merely useful for goals (instrumental)"],answer:3,explanation:"A grandmother's brooch may be constitutive — part of who you are. A bus ticket is instrumental — it facilitates something. This matters for connection-based theories of property."},
+  {id:6,category:"Acquisition",type:"multiple_choice",question:"In Pierson v. Post, the majority held that property in a wild animal requires:",options:["Actual capture, mortal wounding, or maiming plus pursuit (occupancy)", "A reasonable prospect of capture", "Mere pursuit", "Ownership of the land where the animal is found"],answer:0,explanation:"The majority required 'occupancy' — actual capture, mortal wounding, or maiming with continued pursuit. Mere pursuit was insufficient."},
+  {id:7,category:"Acquisition",type:"multiple_choice",question:"The dissent in Pierson v. Post argued for a different standard primarily based on:",options:["Custom among hunters, public policy (foxes are pests), and desert/effort theory", "The Constitution's property clause", "Natural law principles", "International treaties"],answer:0,explanation:"Livingston's dissent relied on hunter customs, utilitarian public policy (foxes are bad), and desert-effort theory (Post did the hard work). He would have used a 'reasonable prospect of capture' standard."},
+  {id:8,category:"Acquisition",type:"multiple_choice",question:"In Johnson v. M'Intosh, the Doctrine of Discovery meant:",options:["The land belonged to whoever could defend it", "Whoever physically occupied land first owned it", "Native Americans had no rights whatsoever", "First European nation to discover land got title; Native Americans kept possession/use but not full title or right to transfer"],answer:3,explanation:"Discovery gave the discovering European nation title; Native Americans retained possession and use but could not transfer title to anyone other than the discovering sovereign."},
   {id:9,category:"Acquisition",type:"true_false",question:"In Johnson v. M'Intosh, the dispute was fabricated so the parties could get a judicial answer about land ownership.",answer:0,explanation:"True. The dispute was fabricated — Johnson even picked opposing counsel. They wanted a definitive answer about who owned the land."},
-  {id:10,category:"Creation & Accession",type:"multiple_choice",question:"In INS v. AP, the Court held that property rights in news exist:",options:["Permanently against everyone","Only in 'hot news,' only against competitors, and only when there is unnecessary/unfair injury","Only for printed newspapers","Never"],answer:1,explanation:"The Court created a narrow quasi-property right: (1) in hot news, (2) against competitors only, (3) when there is unnecessary or unfair injury. This is relative property."},
-  {id:11,category:"Creation & Accession",type:"multiple_choice",question:"The Principle of Accession holds that:",options:["The government always gets the property","The smaller/subordinate resource follows the greater/dominant resource","First in time, first in right","Stolen property always returns to the original owner"],answer:1,explanation:"The lesser follows the greater. A calf follows the cow's owner; a chandelier follows the house."},
-  {id:12,category:"Creation & Accession",type:"multiple_choice",question:"Under the Doctrine of Accession (Wetherbee), when can a transformer of stolen materials keep the product?",options:["Never","When materials are changed to a different species and not willfully taken, OR when labor adds substantially more value","Whenever they add any labor","Only if they pay triple value"],answer:1,explanation:"Under the civil law rule, materials changed to a different species AND not willfully taken may be kept (with payment for materials). The relative value test also matters."},
-  {id:13,category:"Creation & Accession",type:"multiple_choice",question:"The Ad Coelum rule was limited in Hinman to:",options:["Exactly 500 feet above surface","Whatever the FAA designates","The extent the owner can use, what is necessary/convenient, and whether use/enjoyment of surface is destroyed","Only the first 10 feet underground"],answer:2,explanation:"Hinman limited ad coelum to practical boundaries: as far as you can use, necessary and convenient, and whether intrusion destroys use and enjoyment of the surface."},
-  {id:14,category:"Creation & Accession",type:"multiple_choice",question:"New York's MARIA test for fixtures stands for:",options:["Market, Appraisal, Regulation, Intent, Agreement","Method of attachment, Adaptability, Relationship of parties, Intention, Agreement","Mortgage, Assessment, Recording, Insurance, Alienation","Material, Age, Replacement, Installation, Abandonment"],answer:1,explanation:"MARIA = Method of attachment, Adaptability, Relationship of the parties, Intention, and Agreement."},
-  {id:15,category:"Adverse Possession",type:"multiple_choice",question:"The elements of adverse possession are:",options:["Just continuous use for any period","Claim of ownership, actual/hostile possession, open/notorious/visible, continuous/uninterrupted, exclusive, and peaceful","Filing a deed and paying taxes","Asking the owner's permission and staying"],answer:1,explanation:"All six elements must be met for the statutory period: claim of ownership, actual/hostile possession, open/notorious/visible, continuous/uninterrupted, exclusive, and peaceful."},
+  {id:10,category:"Creation & Accession",type:"multiple_choice",question:"In INS v. AP, the Court held that property rights in news exist:",options:["Permanently against everyone", "Never", "Only in 'hot news,' only against competitors, and only when there is unnecessary/unfair injury", "Only for printed newspapers"],answer:2,explanation:"The Court created a narrow quasi-property right: (1) in hot news, (2) against competitors only, (3) when there is unnecessary or unfair injury. This is relative property."},
+  {id:11,category:"Creation & Accession",type:"multiple_choice",question:"The Principle of Accession holds that:",options:["The smaller/subordinate resource follows the greater/dominant resource", "The government always gets the property", "First in time, first in right", "Stolen property always returns to the original owner"],answer:0,explanation:"The lesser follows the greater. A calf follows the cow's owner; a chandelier follows the house."},
+  {id:12,category:"Creation & Accession",type:"multiple_choice",question:"Under the Doctrine of Accession (Wetherbee), when can a transformer of stolen materials keep the product?",options:["Whenever they add any labor", "When materials are changed to a different species and not willfully taken, OR when labor adds substantially more value", "Only if they pay triple value", "Never"],answer:1,explanation:"Under the civil law rule, materials changed to a different species AND not willfully taken may be kept (with payment for materials). The relative value test also matters."},
+  {id:13,category:"Creation & Accession",type:"multiple_choice",question:"The Ad Coelum rule was limited in Hinman to:",options:["Whatever the FAA designates", "Only the first 10 feet underground", "Exactly 500 feet above surface", "The extent the owner can use, what is necessary/convenient, and whether use/enjoyment of surface is destroyed"],answer:3,explanation:"Hinman limited ad coelum to practical boundaries: as far as you can use, necessary and convenient, and whether intrusion destroys use and enjoyment of the surface."},
+  {id:14,category:"Creation & Accession",type:"multiple_choice",question:"New York's MARIA test for fixtures stands for:",options:["Mortgage, Assessment, Recording, Insurance, Alienation", "Material, Age, Replacement, Installation, Abandonment", "Market, Appraisal, Regulation, Intent, Agreement", "Method of attachment, Adaptability, Relationship of parties, Intention, Agreement"],answer:3,explanation:"MARIA = Method of attachment, Adaptability, Relationship of the parties, Intention, and Agreement."},
+  {id:15,category:"Adverse Possession",type:"multiple_choice",question:"The elements of adverse possession are:",options:["Filing a deed and paying taxes", "Just continuous use for any period", "Asking the owner's permission and staying", "Claim of ownership, actual/hostile possession, open/notorious/visible, continuous/uninterrupted, exclusive, and peaceful"],answer:3,explanation:"All six elements must be met for the statutory period: claim of ownership, actual/hostile possession, open/notorious/visible, continuous/uninterrupted, exclusive, and peaceful."},
   {id:16,category:"Adverse Possession",type:"true_false",question:"Adverse possession can be maintained against the federal government.",answer:1,explanation:"False. Adverse possession cannot be maintained against federal or most state governments."},
-  {id:17,category:"Adverse Possession",type:"multiple_choice",question:"'Tacking' in adverse possession means:",options:["Adding a fence","Combining successive periods by parties in privity to meet the statutory period","Filing multiple lawsuits","Paying back taxes"],answer:1,explanation:"Tacking allows combining periods if parties are in privity (sale, lease, inheritance). Without privity, periods cannot be tacked."},
-  {id:18,category:"Protection of Property",type:"multiple_choice",question:"Berg v. Wiley established that for real property where the landlord lacks possession:",options:["Self-help is always permitted","Self-help is generally not permitted — landlords must use judicial process","Deadly force is acceptable","The landlord can change locks anytime"],answer:1,explanation:"Landlords cannot use self-help to regain possession. They must go through judicial process."},
-  {id:19,category:"Protection of Property",type:"multiple_choice",question:"Self-help repossession of personal property (Williams v. FMCC) is permitted only if:",options:["The creditor has a security interest and there is no breach of the peace","The debtor consents each time","A court order is obtained","The property is worth less than $5,000"],answer:0,explanation:"For secured personal property under the UCC, self-help is allowed with a security interest AND no breach of the peace."},
-  {id:20,category:"Trespass & Nuisance",type:"multiple_choice",question:"Trespass to real property is strict liability, meaning:",options:["Intent to harm must be proven","No damages need be proved — any unauthorized entry is sufficient","The trespasser must cause $1,000+ damage","Only criminal trespass counts"],answer:1,explanation:"Any unauthorized physical entry is actionable regardless of intent or actual damages."},
-  {id:21,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Jacques, punitive damages for trespass were awarded because:",options:["The trespasser was wealthy","Protecting the right to exclude has dignitary value and deters bad behavior","The jury was biased","The trespass occurred at night"],answer:1,explanation:"The right to exclude has inherent dignitary value. Punitive damages deter intentional trespass and prevent self-help."},
-  {id:22,category:"Trespass & Nuisance",type:"multiple_choice",question:"The key distinction between trespass and nuisance is:",options:["Trespass is criminal; nuisance is civil","Trespass protects possession (tangible/direct); nuisance protects use and enjoyment (significant/unreasonable harm)","They are the same","Trespass requires intent; nuisance does not"],answer:1,explanation:"Trespass = possessory interest, tangible/direct, strict liability. Nuisance = use/enjoyment, significant/unreasonable harm, cost-benefit balancing."},
-  {id:23,category:"Trespass & Nuisance",type:"multiple_choice",question:"The Coase Theorem suggests that:",options:["Courts should always side with plaintiff","If property rights are well-defined and transaction costs low, parties bargain to efficient outcome regardless of initial entitlement","Government should never intervene","Nuisance should be abolished"],answer:1,explanation:"Coase: with clear rights and low transaction costs, private bargaining produces efficient outcomes regardless of initial allocation."},
-  {id:24,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Boomer v. Atlantic Cement, the 'conditional injunction' meant:",options:["Factory closes immediately","Nuisance enjoined UNLESS defendant pays permanent damages to continue","Plaintiff must move","Case dismissed"],answer:1,explanation:"Boomer = liability rule. Plaintiff got the entitlement but defendant could pay to continue. Rule 2 in Calabresi-Melamed."},
-  {id:25,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Spur v. Del Webb, the unusual remedy was:",options:["Developer tears down homes","Feedlot must move BUT developer must indemnify the feedlot owner","Both parties mediate","Coming to nuisance doctrine applied"],answer:1,explanation:"Rule 4: feedlot must move (public nuisance) but developer who 'came to the nuisance' must pay relocation costs."},
-  {id:26,category:"Landlord-Tenant",type:"multiple_choice",question:"The four types of landlord-tenant relationships are:",options:["Lease, license, easement, covenant","Term of years, periodic, tenancy at will, tenancy at sufferance","Fee simple, life estate, remainder, reversion","Joint tenancy, TIC, tenancy by entirety, community property"],answer:1,explanation:"They differ in how they end: term of years (fixed end), periodic (rolls over, notice needed), at will (either party ends), at sufferance (holdover)."},
-  {id:27,category:"Landlord-Tenant",type:"multiple_choice",question:"The implied warranty of habitability:",options:["Can always be waived","Often cannot be waived, is based on housing codes, and applies to residential leases","Applies only to commercial leases","Was part of common law since 1200"],answer:1,explanation:"Emerged in 1960s-70s, often unwaivable, based on housing codes, residential leases only. Commercial uses constructive eviction."},
-  {id:28,category:"Landlord-Tenant",type:"multiple_choice",question:"The difference between assignment and sublease is:",options:["They are the same","In assignment, entire interest transfers and landlord has privity with new tenant; in sublease, original tenant plans to return","Assignment requires court approval","Sublease transfers more rights"],answer:1,explanation:"Assignment = entire remaining interest transferred, landlord has direct relationship with assignee. Sublease = original tenant retains interest, no direct landlord-subletter relationship."},
-  {id:29,category:"Recording Systems",type:"multiple_choice",question:"Under a 'notice' recording system:",options:["First to record wins","Subsequent GFPV who LACKS notice gets the property","Only government entities can record","Recording has no effect"],answer:1,explanation:"In notice, a subsequent bona fide purchaser for value without notice prevails. The last GFPV wins."},
-  {id:30,category:"Recording Systems",type:"multiple_choice",question:"Under 'race-notice,' to prevail a subsequent purchaser must:",options:["Only record first","Only lack notice","Be a subsequent GFPV without notice AND be first to record","Pay the highest price"],answer:2,explanation:"Race-notice requires BOTH: (1) GFPV without notice AND (2) first to record. If neither meets both, nemo dat applies."},
-  {id:31,category:"Recording Systems",type:"multiple_choice",question:"The Shelter Rule provides that:",options:["Anyone purchasing from a GFPV gets protected status even if not a GFPV themselves","Only original purchasers are protected","Recording creates absolute protection","Government shelters all owners"],answer:0,explanation:"Shelter extends GFPV protection to subsequent purchasers. Exception: does NOT apply when transferred back to original grantor (prevents collusion)."},
-  {id:32,category:"Recording Systems",type:"multiple_choice",question:"A 'wild deed' is:",options:["A deed with unusual terms","A recorded deed outside the chain of title because a prior deed was never recorded","A deed signed outdoors","A fraudulent deed"],answer:1,explanation:"A wild deed is recorded but unconnectable to the chain of title because a preceding transfer was never recorded."},
-  {id:33,category:"Recording Systems",type:"multiple_choice",question:"'Nemo Dat' means:",options:["Everyone gets equal rights","You cannot give title you do not have","The government controls all titles","Recording creates title"],answer:1,explanation:"Nemo dat quod non habet — you cannot transfer greater rights than you possess. GFPV and recording statutes are exceptions."},
-  {id:34,category:"Easements",type:"multiple_choice",question:"An easement differs from a license because an easement is:",options:["Always oral and temporary","Created with writing, non-possessory, irrevocable, enforceable as real interest in land","Same as a lease","Only for government property"],answer:1,explanation:"Easements: writing, non-possessory, irrevocable, real property interest. Licenses: revocable, no writing needed, defense to trespass only."},
-  {id:35,category:"Easements",type:"multiple_choice",question:"The four negative easements (WALS) are:",options:["Warranty, Assignment, Lien, Security","Water, Air, Light, and Support","Width, Angle, Length, Setback","Waste, Abandonment, Liability, Servitude"],answer:1,explanation:"WALS = Water, Air, Light, Support. These let the dominant owner stop the servient owner from acting."},
-  {id:36,category:"Easements",type:"multiple_choice",question:"An easement can be created by all EXCEPT:",options:["Express grant in writing","Prescription","Estoppel","Oral agreement alone with no reliance"],answer:3,explanation:"Easements can be created by writing, prescription, estoppel, implication, or necessity. Oral agreement alone (without reliance triggering estoppel) is insufficient — Statute of Frauds applies."},
-  {id:37,category:"Covenants",type:"multiple_choice",question:"For the BURDEN of a real covenant to run with the land:",options:["Just a handshake","Intent, horizontal privity, full vertical privity, and touch and concern","Only recording","Payment to government"],answer:1,explanation:"Burden requires: intent to bind successors, horizontal privity (real estate transaction between originals), full vertical privity (same durational interest), and touch and concern."},
-  {id:38,category:"Covenants",type:"multiple_choice",question:"Real covenants vs. equitable servitudes — the key difference is:",options:["Real covenants are written; equitable servitudes are oral","Real covenants give damages (need horizontal privity); equitable servitudes give injunctions (need notice instead)","They are identical","Real covenants are commercial; equitable servitudes residential"],answer:1,explanation:"Real covenants = damages, require horizontal privity. Equitable servitudes (Tulk v. Moxhay) = injunctions, require notice instead of horizontal privity."},
-  {id:39,category:"Mortgages",type:"multiple_choice",question:"Title theory vs. lien theory in mortgages:",options:["Title theory: borrower has title; lien theory: bank has title","Title theory: bank holds legal title; lien theory: borrower retains title, bank has a lien","They are identical","Title theory is for commercial; lien theory residential"],answer:1,explanation:"Title theory: bank holds legal title. Lien theory: borrower retains legal title, bank has only a lien/security interest."},
-  {id:40,category:"Mortgages",type:"multiple_choice",question:"The right of redemption allows:",options:["Bank to seize property on first missed payment","Borrower to pay what is owed and reclaim property before (or sometimes after) foreclosure","Borrower to walk away without consequences","Government to take property"],answer:1,explanation:"Equitable right of redemption lets a defaulting borrower pay full amount and keep the property. Some states extend this past foreclosure sale."},
-  {id:41,category:"Concurrent Ownership",type:"multiple_choice",question:"In Delfino v. Vealencis, the court held partition in kind is preferred when:",options:["Property is very valuable","Physical division is practicable and serves the parties' interests","Parties are related","Property is commercial"],answer:1,explanation:"Partition in kind preferred when practicable. Vealencis lived there and ran a business — her interests were served by physical division, not forced sale."},
-  {id:42,category:"Fair Housing",type:"multiple_choice",question:"Shelley v. Kraemer held that racially restrictive covenants:",options:["Are unconstitutional on their face","Are not unconstitutional themselves, but judicial enforcement constitutes state action violating Equal Protection","Are always enforceable privately","Were abolished by the 13th Amendment"],answer:1,explanation:"Private covenants aren't unconstitutional (private action), but court enforcement = state action = 14th Amendment violation."},
-  {id:43,category:"Fair Housing",type:"multiple_choice",question:"The Fair Housing Act's 'Mrs. Murphy exception' exempts:",options:["All landlords named Murphy","Owner-occupied dwellings with no more than three other families","Properties worth under $100,000","Student housing"],answer:1,explanation:"Section 3607(2) exempts owner-occupied dwellings with no more than three other families living there."},
-  {id:44,category:"Zoning",type:"multiple_choice",question:"Village of Euclid established that zoning is:",options:["Always unconstitutional","A valid exercise of police power, analogized to nuisance prevention","Only permitted by federal government","Limited to commercial areas"],answer:1,explanation:"Euclid upheld zoning as valid police power, analogized to nuisance prevention, subject to a reasonableness test."},
-  {id:45,category:"Zoning",type:"multiple_choice",question:"In Mount Laurel, the court held municipalities must:",options:["Have absolute zoning discretion","Provide opportunity for variety and choice of housing, considering welfare of the entire state","Exclude low-income housing if it reduces property values","Have no zoning power"],answer:1,explanation:"Zoning power comes from the state, so municipalities must consider statewide welfare. Exclusionary zoning violating this is unconstitutional. Effects-based test, not just intent."},
-  {id:46,category:"Future Interests",type:"multiple_choice",question:"A fee simple determinable automatically ends when a specified event occurs. The grantor retains a:",options:["Right of re-entry","Reversion","Possibility of reverter","Remainder"],answer:2,explanation:"Fee simple determinable + possibility of reverter: estate automatically reverts. Compare fee simple subject to condition subsequent + right of re-entry (grantor must act)."},
-  {id:47,category:"Future Interests",type:"multiple_choice",question:"A 'remainder' becomes possessory:",options:["By cutting short a preceding estate","On the natural expiration of the preceding estate","Only when the grantor dies","Immediately upon creation"],answer:1,explanation:"Remainders wait for natural end of prior estate (like life estate ending at death). Executory interests cut short preceding estates."},
-  {id:48,category:"Bailments & Licenses",type:"multiple_choice",question:"Wood v. Leadbitter held that a license (like an event ticket) is:",options:["Irrevocable once paid","Revocable — unless it accompanies a valid grant","Same as an easement","Transferable to heirs"],answer:1,explanation:"A license is revocable. Only exception: when it accompanies a valid grant, making it irrevocable."},
-  {id:49,category:"Bailments & Licenses",type:"multiple_choice",question:"A bailment requires:",options:["A sale of goods","Possession, control, and custody transferred to the bailee","Only a written contract","A gift of property"],answer:1,explanation:"Bailment = transfer of possession, control, and custody (not ownership). Can be explicit or constructive."},
-  {id:50,category:"Transfers",type:"multiple_choice",question:"A gift causa mortis requires:",options:["Only a written will","Delivery during donor's lifetime, made in expectation of death from specific cause, and donor must die from that cause","Just saying 'I give this to you'","Filing with county recorder"],answer:1,explanation:"Gift causa mortis: (1) delivery during lifetime, (2) in expectation of imminent death, (3) from the specific anticipated cause. Fails if donor survives or dies from different cause."},
-  {id:51,category:"Transfers",type:"multiple_choice",question:"The GFPV exception to nemo dat applies when:",options:["Seller has void title (theft)","Seller has voidable title (fraud), buyer acts in good faith, and buyer gives value","Buyer knows goods are stolen","Property is worth under $500"],answer:1,explanation:"GFPV protects buyers from sellers with voidable title (fraud). Does NOT protect from void title (theft)."},
-  {id:52,category:"Protection of Property",type:"multiple_choice",question:"In State v. Shack, the court held a farmer could not exclude legal aid workers because:",options:["Workers owned the land","Property rights are malleable and must serve human interests — vulnerable individuals have rights limiting the owner's exclusion","The Constitution requires all property be open","Farmer abandoned the property"],answer:1,explanation:"Property rights must serve human interests. The court considered workers' vulnerability, congressional policy, and the fact the landowner invited them. Owner retained rights to exclude solicitors."},
-  {id:53,category:"Protection of Property",type:"multiple_choice",question:"In Ploof v. Putnam, the doctrine of necessity:",options:["Let a property owner destroy a neighbor's dock","Created a temporary property right allowing emergency use of another's property that the owner cannot override with self-help","Let anyone enter any property anytime","Applied only to government officials"],answer:1,explanation:"Necessity creates a temporary right. The dock owner could not use self-help to remove the boat during the storm. Under Vincent, the person may still owe compensation for damages."},
+  {id:17,category:"Adverse Possession",type:"multiple_choice",question:"'Tacking' in adverse possession means:",options:["Paying back taxes", "Adding a fence", "Combining successive periods by parties in privity to meet the statutory period", "Filing multiple lawsuits"],answer:2,explanation:"Tacking allows combining periods if parties are in privity (sale, lease, inheritance). Without privity, periods cannot be tacked."},
+  {id:18,category:"Protection of Property",type:"multiple_choice",question:"Berg v. Wiley established that for real property where the landlord lacks possession:",options:["Deadly force is acceptable", "The landlord can change locks anytime", "Self-help is generally not permitted — landlords must use judicial process", "Self-help is always permitted"],answer:2,explanation:"Landlords cannot use self-help to regain possession. They must go through judicial process."},
+  {id:19,category:"Protection of Property",type:"multiple_choice",question:"Self-help repossession of personal property (Williams v. FMCC) is permitted only if:",options:["The debtor consents each time", "The property is worth less than $5,000", "A court order is obtained", "The creditor has a security interest and there is no breach of the peace"],answer:3,explanation:"For secured personal property under the UCC, self-help is allowed with a security interest AND no breach of the peace."},
+  {id:20,category:"Trespass & Nuisance",type:"multiple_choice",question:"Trespass to real property is strict liability, meaning:",options:["No damages need be proved — any unauthorized entry is sufficient", "The trespasser must cause $1,000+ damage", "Only criminal trespass counts", "Intent to harm must be proven"],answer:0,explanation:"Any unauthorized physical entry is actionable regardless of intent or actual damages."},
+  {id:21,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Jacques, punitive damages for trespass were awarded because:",options:["The trespasser was wealthy", "The jury was biased", "Protecting the right to exclude has dignitary value and deters bad behavior", "The trespass occurred at night"],answer:2,explanation:"The right to exclude has inherent dignitary value. Punitive damages deter intentional trespass and prevent self-help."},
+  {id:22,category:"Trespass & Nuisance",type:"multiple_choice",question:"The key distinction between trespass and nuisance is:",options:["They are the same", "Trespass is criminal; nuisance is civil", "Trespass requires intent; nuisance does not", "Trespass protects possession (tangible/direct); nuisance protects use and enjoyment (significant/unreasonable harm)"],answer:3,explanation:"Trespass = possessory interest, tangible/direct, strict liability. Nuisance = use/enjoyment, significant/unreasonable harm, cost-benefit balancing."},
+  {id:23,category:"Trespass & Nuisance",type:"multiple_choice",question:"The Coase Theorem suggests that:",options:["Government should never intervene", "Courts should always side with plaintiff", "Nuisance should be abolished", "If property rights are well-defined and transaction costs low, parties bargain to efficient outcome regardless of initial entitlement"],answer:3,explanation:"Coase: with clear rights and low transaction costs, private bargaining produces efficient outcomes regardless of initial allocation."},
+  {id:24,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Boomer v. Atlantic Cement, the 'conditional injunction' meant:",options:["Factory closes immediately", "Plaintiff must move", "Nuisance enjoined UNLESS defendant pays permanent damages to continue", "Case dismissed"],answer:2,explanation:"Boomer = liability rule. Plaintiff got the entitlement but defendant could pay to continue. Rule 2 in Calabresi-Melamed."},
+  {id:25,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Spur v. Del Webb, the unusual remedy was:",options:["Developer tears down homes", "Coming to nuisance doctrine applied", "Feedlot must move BUT developer must indemnify the feedlot owner", "Both parties mediate"],answer:2,explanation:"Rule 4: feedlot must move (public nuisance) but developer who 'came to the nuisance' must pay relocation costs."},
+  {id:26,category:"Landlord-Tenant",type:"multiple_choice",question:"The four types of landlord-tenant relationships are:",options:["Fee simple, life estate, remainder, reversion", "Joint tenancy, TIC, tenancy by entirety, community property", "Lease, license, easement, covenant", "Term of years, periodic, tenancy at will, tenancy at sufferance"],answer:3,explanation:"They differ in how they end: term of years (fixed end), periodic (rolls over, notice needed), at will (either party ends), at sufferance (holdover)."},
+  {id:27,category:"Landlord-Tenant",type:"multiple_choice",question:"The implied warranty of habitability:",options:["Was part of common law since 1200", "Applies only to commercial leases", "Can always be waived", "Often cannot be waived, is based on housing codes, and applies to residential leases"],answer:3,explanation:"Emerged in 1960s-70s, often unwaivable, based on housing codes, residential leases only. Commercial uses constructive eviction."},
+  {id:28,category:"Landlord-Tenant",type:"multiple_choice",question:"The difference between assignment and sublease is:",options:["In assignment, entire interest transfers and landlord has privity with new tenant; in sublease, original tenant plans to return", "Sublease transfers more rights", "They are the same", "Assignment requires court approval"],answer:0,explanation:"Assignment = entire remaining interest transferred, landlord has direct relationship with assignee. Sublease = original tenant retains interest, no direct landlord-subletter relationship."},
+  {id:29,category:"Recording Systems",type:"multiple_choice",question:"Under a 'notice' recording system:",options:["Subsequent GFPV who LACKS notice gets the property", "First to record wins", "Only government entities can record", "Recording has no effect"],answer:0,explanation:"In notice, a subsequent bona fide purchaser for value without notice prevails. The last GFPV wins."},
+  {id:30,category:"Recording Systems",type:"multiple_choice",question:"Under 'race-notice,' to prevail a subsequent purchaser must:",options:["Only lack notice", "Pay the highest price", "Be a subsequent GFPV without notice AND be first to record", "Only record first"],answer:2,explanation:"Race-notice requires BOTH: (1) GFPV without notice AND (2) first to record. If neither meets both, nemo dat applies."},
+  {id:31,category:"Recording Systems",type:"multiple_choice",question:"The Shelter Rule provides that:",options:["Government shelters all owners", "Recording creates absolute protection", "Anyone purchasing from a GFPV gets protected status even if not a GFPV themselves", "Only original purchasers are protected"],answer:2,explanation:"Shelter extends GFPV protection to subsequent purchasers. Exception: does NOT apply when transferred back to original grantor (prevents collusion)."},
+  {id:32,category:"Recording Systems",type:"multiple_choice",question:"A 'wild deed' is:",options:["A deed signed outdoors", "A deed with unusual terms", "A fraudulent deed", "A recorded deed outside the chain of title because a prior deed was never recorded"],answer:3,explanation:"A wild deed is recorded but unconnectable to the chain of title because a preceding transfer was never recorded."},
+  {id:33,category:"Recording Systems",type:"multiple_choice",question:"'Nemo Dat' means:",options:["Recording creates title", "Everyone gets equal rights", "The government controls all titles", "You cannot give title you do not have"],answer:3,explanation:"Nemo dat quod non habet — you cannot transfer greater rights than you possess. GFPV and recording statutes are exceptions."},
+  {id:34,category:"Easements",type:"multiple_choice",question:"An easement differs from a license because an easement is:",options:["Only for government property", "Same as a lease", "Created with writing, non-possessory, irrevocable, enforceable as real interest in land", "Always oral and temporary"],answer:2,explanation:"Easements: writing, non-possessory, irrevocable, real property interest. Licenses: revocable, no writing needed, defense to trespass only."},
+  {id:35,category:"Easements",type:"multiple_choice",question:"The four negative easements (WALS) are:",options:["Waste, Abandonment, Liability, Servitude", "Water, Air, Light, and Support", "Warranty, Assignment, Lien, Security", "Width, Angle, Length, Setback"],answer:1,explanation:"WALS = Water, Air, Light, Support. These let the dominant owner stop the servient owner from acting."},
+  {id:36,category:"Easements",type:"multiple_choice",question:"An easement can be created by all EXCEPT:",options:["Express grant in writing", "Estoppel", "Oral agreement alone with no reliance", "Prescription"],answer:2,explanation:"Easements can be created by writing, prescription, estoppel, implication, or necessity. Oral agreement alone (without reliance triggering estoppel) is insufficient — Statute of Frauds applies."},
+  {id:37,category:"Covenants",type:"multiple_choice",question:"For the BURDEN of a real covenant to run with the land:",options:["Just a handshake", "Payment to government", "Only recording", "Intent, horizontal privity, full vertical privity, and touch and concern"],answer:3,explanation:"Burden requires: intent to bind successors, horizontal privity (real estate transaction between originals), full vertical privity (same durational interest), and touch and concern."},
+  {id:38,category:"Covenants",type:"multiple_choice",question:"Real covenants vs. equitable servitudes — the key difference is:",options:["They are identical", "Real covenants are written; equitable servitudes are oral", "Real covenants give damages (need horizontal privity); equitable servitudes give injunctions (need notice instead)", "Real covenants are commercial; equitable servitudes residential"],answer:2,explanation:"Real covenants = damages, require horizontal privity. Equitable servitudes (Tulk v. Moxhay) = injunctions, require notice instead of horizontal privity."},
+  {id:39,category:"Mortgages",type:"multiple_choice",question:"Title theory vs. lien theory in mortgages:",options:["They are identical", "Title theory is for commercial; lien theory residential", "Title theory: bank holds legal title; lien theory: borrower retains title, bank has a lien", "Title theory: borrower has title; lien theory: bank has title"],answer:2,explanation:"Title theory: bank holds legal title. Lien theory: borrower retains legal title, bank has only a lien/security interest."},
+  {id:40,category:"Mortgages",type:"multiple_choice",question:"The right of redemption allows:",options:["Borrower to pay what is owed and reclaim property before (or sometimes after) foreclosure", "Government to take property", "Borrower to walk away without consequences", "Bank to seize property on first missed payment"],answer:0,explanation:"Equitable right of redemption lets a defaulting borrower pay full amount and keep the property. Some states extend this past foreclosure sale."},
+  {id:41,category:"Concurrent Ownership",type:"multiple_choice",question:"In Delfino v. Vealencis, the court held partition in kind is preferred when:",options:["Property is commercial", "Physical division is practicable and serves the parties' interests", "Property is very valuable", "Parties are related"],answer:1,explanation:"Partition in kind preferred when practicable. Vealencis lived there and ran a business — her interests were served by physical division, not forced sale."},
+  {id:42,category:"Fair Housing",type:"multiple_choice",question:"Shelley v. Kraemer held that racially restrictive covenants:",options:["Are always enforceable privately", "Are not unconstitutional themselves, but judicial enforcement constitutes state action violating Equal Protection", "Were abolished by the 13th Amendment", "Are unconstitutional on their face"],answer:1,explanation:"Private covenants aren't unconstitutional (private action), but court enforcement = state action = 14th Amendment violation."},
+  {id:43,category:"Fair Housing",type:"multiple_choice",question:"The Fair Housing Act's 'Mrs. Murphy exception' exempts:",options:["Student housing", "Owner-occupied dwellings with no more than three other families", "All landlords named Murphy", "Properties worth under $100,000"],answer:1,explanation:"Section 3607(2) exempts owner-occupied dwellings with no more than three other families living there."},
+  {id:44,category:"Zoning",type:"multiple_choice",question:"Village of Euclid established that zoning is:",options:["A valid exercise of police power, analogized to nuisance prevention", "Always unconstitutional", "Limited to commercial areas", "Only permitted by federal government"],answer:0,explanation:"Euclid upheld zoning as valid police power, analogized to nuisance prevention, subject to a reasonableness test."},
+  {id:45,category:"Zoning",type:"multiple_choice",question:"In Mount Laurel, the court held municipalities must:",options:["Provide opportunity for variety and choice of housing, considering welfare of the entire state", "Have absolute zoning discretion", "Have no zoning power", "Exclude low-income housing if it reduces property values"],answer:0,explanation:"Zoning power comes from the state, so municipalities must consider statewide welfare. Exclusionary zoning violating this is unconstitutional. Effects-based test, not just intent."},
+  {id:46,category:"Future Interests",type:"multiple_choice",question:"A fee simple determinable automatically ends when a specified event occurs. The grantor retains a:",options:["Possibility of reverter", "Right of re-entry", "Remainder", "Reversion"],answer:0,explanation:"Fee simple determinable + possibility of reverter: estate automatically reverts. Compare fee simple subject to condition subsequent + right of re-entry (grantor must act)."},
+  {id:47,category:"Future Interests",type:"multiple_choice",question:"A 'remainder' becomes possessory:",options:["On the natural expiration of the preceding estate", "Immediately upon creation", "Only when the grantor dies", "By cutting short a preceding estate"],answer:0,explanation:"Remainders wait for natural end of prior estate (like life estate ending at death). Executory interests cut short preceding estates."},
+  {id:48,category:"Bailments & Licenses",type:"multiple_choice",question:"Wood v. Leadbitter held that a license (like an event ticket) is:",options:["Transferable to heirs", "Irrevocable once paid", "Revocable — unless it accompanies a valid grant", "Same as an easement"],answer:2,explanation:"A license is revocable. Only exception: when it accompanies a valid grant, making it irrevocable."},
+  {id:49,category:"Bailments & Licenses",type:"multiple_choice",question:"A bailment requires:",options:["A gift of property", "Possession, control, and custody transferred to the bailee", "A sale of goods", "Only a written contract"],answer:1,explanation:"Bailment = transfer of possession, control, and custody (not ownership). Can be explicit or constructive."},
+  {id:50,category:"Transfers",type:"multiple_choice",question:"A gift causa mortis requires:",options:["Just saying 'I give this to you'", "Only a written will", "Delivery during donor's lifetime, made in expectation of death from specific cause, and donor must die from that cause", "Filing with county recorder"],answer:2,explanation:"Gift causa mortis: (1) delivery during lifetime, (2) in expectation of imminent death, (3) from the specific anticipated cause. Fails if donor survives or dies from different cause."},
+  {id:51,category:"Transfers",type:"multiple_choice",question:"The GFPV exception to nemo dat applies when:",options:["Property is worth under $500", "Seller has voidable title (fraud), buyer acts in good faith, and buyer gives value", "Buyer knows goods are stolen", "Seller has void title (theft)"],answer:1,explanation:"GFPV protects buyers from sellers with voidable title (fraud). Does NOT protect from void title (theft)."},
+  {id:52,category:"Protection of Property",type:"multiple_choice",question:"In State v. Shack, the court held a farmer could not exclude legal aid workers because:",options:["Property rights are malleable and must serve human interests — vulnerable individuals have rights limiting the owner's exclusion", "Farmer abandoned the property", "Workers owned the land", "The Constitution requires all property be open"],answer:0,explanation:"Property rights must serve human interests. The court considered workers' vulnerability, congressional policy, and the fact the landowner invited them. Owner retained rights to exclude solicitors."},
+  {id:53,category:"Protection of Property",type:"multiple_choice",question:"In Ploof v. Putnam, the doctrine of necessity:",options:["Applied only to government officials", "Created a temporary property right allowing emergency use of another's property that the owner cannot override with self-help", "Let a property owner destroy a neighbor's dock", "Let anyone enter any property anytime"],answer:1,explanation:"Necessity creates a temporary right. The dock owner could not use self-help to remove the boat during the storm. Under Vincent, the person may still owe compensation for damages."},
     ]
   }
 };
