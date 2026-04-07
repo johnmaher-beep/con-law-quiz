@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx -y 0nmcp@latest --help)",
+      "Bash(npx -y 0nmcp@latest login)"
+    ]
+  }
+}
