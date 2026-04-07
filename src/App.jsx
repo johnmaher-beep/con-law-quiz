@@ -4,7 +4,12 @@ const MARVIN_WRONG = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABc
 
 const MARVIN_RIGHT = "data:image/jpeg;base64,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";
 
-const questions = [
+const subjects = {
+  "Constitutional Law": {
+    emoji: "⚖️",
+    color: "#7c3aed",
+    questions: [
+const conLawQuestions = [
   // === JUDICIAL REVIEW & STRUCTURE ===
   {
     id: 1,
@@ -940,25 +945,67 @@ const questions = [
     answer: 1,
     explanation: "False. NFIB did NOT overrule any Commerce Clause precedent. J&L, Darby, Wickard, Heart of Atlanta, McClung, Lopez, Morrison, and Raich all remain good law."
   }
-];
-
-const categories = [...new Set(questions.map(q => q.category))];
-
-const categoryColors = {
-  "Judicial Review": "#4F46E5",
-  "Federalism": "#0891B2",
-  "Commerce Clause": "#059669",
-  "Spending Power": "#D97706",
-  "Commandeering": "#DC2626",
-  "Separation of Powers": "#7C3AED",
-  "Interpretation": "#DB2777",
-  "Individual Rights": "#2563EB",
-  "Reconstruction": "#92400E",
-  "Equal Protection": "#B91C1C",
-  "Affirmative Action": "#6D28D9",
-  "Due Process": "#0D9488",
-  "Standards of Review": "#EA580C",
-  "Sex Discrimination": "#C026D3"
+    ]
+  },
+  "Property Law": {
+    emoji: "🏠",
+    color: "#059669",
+    questions: [
+  {id:1,category:"Property Theory",type:"multiple_choice",question:"Blackstone's view of property is best described as:",options:["Property is a bundle of rights created by government","Property comes from natural law and involves the right to exclude","Property is whatever the court says it is","Property is purely about economic efficiency"],answer:1,explanation:"Blackstone held that property comes from natural law and God, is defined by nature, and centers on exclusion — no one, including the government, can intervene. This is a highly libertarian, formalist view."},
+  {id:2,category:"Property Theory",type:"multiple_choice",question:"Legal Realists like Robert Hale view property as:",options:["Natural rights that preexist government","A bundle of rights where government determines and shapes property rights","Purely about the right to exclude","Fixed categories defined by nature"],answer:1,explanation:"Legal Realists see property as created by government and society, not nature. Hale argued that the government is always involved in property distribution — there is no escape from government in property law."},
+  {id:3,category:"Property Theory",type:"multiple_choice",question:"The 'New Essentialists' (Merrill & Smith) argue that property is primarily about:",options:["Redistribution of wealth","Exclusion, but from a positivist (not natural law) perspective that allows contextual determinations","Whatever the legislature says","Pure contract rights"],answer:1,explanation:"Merrill & Smith hold that property is mainly about exclusion, but unlike Blackstone, they are positivists — law is created by the state. They allow for contextual determinations and government intervention while arguing property should have a definable essence."},
+  {id:4,category:"Property Theory",type:"multiple_choice",question:"Robert Hale's key insight about property and coercion is that:",options:["Only government can coerce","Property rights exist in the shadow of government intervention — both sides use state-backed coercion","Coercion only exists in criminal law","The market is a natural, government-free institution"],answer:1,explanation:"Hale argued property rights are always shaped by government. Both owners and workers use state-backed coercive power. The government either takes over decision-making or defers to the owner — either way you cannot escape the government."},
+  {id:5,category:"Property Theory",type:"multiple_choice",question:"The 'constitutive' vs. 'instrumental' distinction means:",options:["Whether property is real or personal","Whether an object is fundamental to identity (constitutive) or merely useful for goals (instrumental)","Whether property was acquired by purchase or gift","Whether the government created the right"],answer:1,explanation:"A grandmother's brooch may be constitutive — part of who you are. A bus ticket is instrumental — it facilitates something. This matters for connection-based theories of property."},
+  {id:6,category:"Acquisition",type:"multiple_choice",question:"In Pierson v. Post, the majority held that property in a wild animal requires:",options:["Mere pursuit","A reasonable prospect of capture","Actual capture, mortal wounding, or maiming plus pursuit (occupancy)","Ownership of the land where the animal is found"],answer:2,explanation:"The majority required 'occupancy' — actual capture, mortal wounding, or maiming with continued pursuit. Mere pursuit was insufficient."},
+  {id:7,category:"Acquisition",type:"multiple_choice",question:"The dissent in Pierson v. Post argued for a different standard primarily based on:",options:["Natural law principles","Custom among hunters, public policy (foxes are pests), and desert/effort theory","The Constitution's property clause","International treaties"],answer:1,explanation:"Livingston's dissent relied on hunter customs, utilitarian public policy (foxes are bad), and desert-effort theory (Post did the hard work). He would have used a 'reasonable prospect of capture' standard."},
+  {id:8,category:"Acquisition",type:"multiple_choice",question:"In Johnson v. M'Intosh, the Doctrine of Discovery meant:",options:["First European nation to discover land got title; Native Americans kept possession/use but not full title or right to transfer","Whoever physically occupied land first owned it","Native Americans had no rights whatsoever","The land belonged to whoever could defend it"],answer:0,explanation:"Discovery gave the discovering European nation title; Native Americans retained possession and use but could not transfer title to anyone other than the discovering sovereign."},
+  {id:9,category:"Acquisition",type:"true_false",question:"In Johnson v. M'Intosh, the dispute was fabricated so the parties could get a judicial answer about land ownership.",answer:0,explanation:"True. The dispute was fabricated — Johnson even picked opposing counsel. They wanted a definitive answer about who owned the land."},
+  {id:10,category:"Creation & Accession",type:"multiple_choice",question:"In INS v. AP, the Court held that property rights in news exist:",options:["Permanently against everyone","Only in 'hot news,' only against competitors, and only when there is unnecessary/unfair injury","Only for printed newspapers","Never"],answer:1,explanation:"The Court created a narrow quasi-property right: (1) in hot news, (2) against competitors only, (3) when there is unnecessary or unfair injury. This is relative property."},
+  {id:11,category:"Creation & Accession",type:"multiple_choice",question:"The Principle of Accession holds that:",options:["The government always gets the property","The smaller/subordinate resource follows the greater/dominant resource","First in time, first in right","Stolen property always returns to the original owner"],answer:1,explanation:"The lesser follows the greater. A calf follows the cow's owner; a chandelier follows the house."},
+  {id:12,category:"Creation & Accession",type:"multiple_choice",question:"Under the Doctrine of Accession (Wetherbee), when can a transformer of stolen materials keep the product?",options:["Never","When materials are changed to a different species and not willfully taken, OR when labor adds substantially more value","Whenever they add any labor","Only if they pay triple value"],answer:1,explanation:"Under the civil law rule, materials changed to a different species AND not willfully taken may be kept (with payment for materials). The relative value test also matters."},
+  {id:13,category:"Creation & Accession",type:"multiple_choice",question:"The Ad Coelum rule was limited in Hinman to:",options:["Exactly 500 feet above surface","Whatever the FAA designates","The extent the owner can use, what is necessary/convenient, and whether use/enjoyment of surface is destroyed","Only the first 10 feet underground"],answer:2,explanation:"Hinman limited ad coelum to practical boundaries: as far as you can use, necessary and convenient, and whether intrusion destroys use and enjoyment of the surface."},
+  {id:14,category:"Creation & Accession",type:"multiple_choice",question:"New York's MARIA test for fixtures stands for:",options:["Market, Appraisal, Regulation, Intent, Agreement","Method of attachment, Adaptability, Relationship of parties, Intention, Agreement","Mortgage, Assessment, Recording, Insurance, Alienation","Material, Age, Replacement, Installation, Abandonment"],answer:1,explanation:"MARIA = Method of attachment, Adaptability, Relationship of the parties, Intention, and Agreement."},
+  {id:15,category:"Adverse Possession",type:"multiple_choice",question:"The elements of adverse possession are:",options:["Just continuous use for any period","Claim of ownership, actual/hostile possession, open/notorious/visible, continuous/uninterrupted, exclusive, and peaceful","Filing a deed and paying taxes","Asking the owner's permission and staying"],answer:1,explanation:"All six elements must be met for the statutory period: claim of ownership, actual/hostile possession, open/notorious/visible, continuous/uninterrupted, exclusive, and peaceful."},
+  {id:16,category:"Adverse Possession",type:"true_false",question:"Adverse possession can be maintained against the federal government.",answer:1,explanation:"False. Adverse possession cannot be maintained against federal or most state governments."},
+  {id:17,category:"Adverse Possession",type:"multiple_choice",question:"'Tacking' in adverse possession means:",options:["Adding a fence","Combining successive periods by parties in privity to meet the statutory period","Filing multiple lawsuits","Paying back taxes"],answer:1,explanation:"Tacking allows combining periods if parties are in privity (sale, lease, inheritance). Without privity, periods cannot be tacked."},
+  {id:18,category:"Protection of Property",type:"multiple_choice",question:"Berg v. Wiley established that for real property where the landlord lacks possession:",options:["Self-help is always permitted","Self-help is generally not permitted — landlords must use judicial process","Deadly force is acceptable","The landlord can change locks anytime"],answer:1,explanation:"Landlords cannot use self-help to regain possession. They must go through judicial process."},
+  {id:19,category:"Protection of Property",type:"multiple_choice",question:"Self-help repossession of personal property (Williams v. FMCC) is permitted only if:",options:["The creditor has a security interest and there is no breach of the peace","The debtor consents each time","A court order is obtained","The property is worth less than $5,000"],answer:0,explanation:"For secured personal property under the UCC, self-help is allowed with a security interest AND no breach of the peace."},
+  {id:20,category:"Trespass & Nuisance",type:"multiple_choice",question:"Trespass to real property is strict liability, meaning:",options:["Intent to harm must be proven","No damages need be proved — any unauthorized entry is sufficient","The trespasser must cause $1,000+ damage","Only criminal trespass counts"],answer:1,explanation:"Any unauthorized physical entry is actionable regardless of intent or actual damages."},
+  {id:21,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Jacques, punitive damages for trespass were awarded because:",options:["The trespasser was wealthy","Protecting the right to exclude has dignitary value and deters bad behavior","The jury was biased","The trespass occurred at night"],answer:1,explanation:"The right to exclude has inherent dignitary value. Punitive damages deter intentional trespass and prevent self-help."},
+  {id:22,category:"Trespass & Nuisance",type:"multiple_choice",question:"The key distinction between trespass and nuisance is:",options:["Trespass is criminal; nuisance is civil","Trespass protects possession (tangible/direct); nuisance protects use and enjoyment (significant/unreasonable harm)","They are the same","Trespass requires intent; nuisance does not"],answer:1,explanation:"Trespass = possessory interest, tangible/direct, strict liability. Nuisance = use/enjoyment, significant/unreasonable harm, cost-benefit balancing."},
+  {id:23,category:"Trespass & Nuisance",type:"multiple_choice",question:"The Coase Theorem suggests that:",options:["Courts should always side with plaintiff","If property rights are well-defined and transaction costs low, parties bargain to efficient outcome regardless of initial entitlement","Government should never intervene","Nuisance should be abolished"],answer:1,explanation:"Coase: with clear rights and low transaction costs, private bargaining produces efficient outcomes regardless of initial allocation."},
+  {id:24,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Boomer v. Atlantic Cement, the 'conditional injunction' meant:",options:["Factory closes immediately","Nuisance enjoined UNLESS defendant pays permanent damages to continue","Plaintiff must move","Case dismissed"],answer:1,explanation:"Boomer = liability rule. Plaintiff got the entitlement but defendant could pay to continue. Rule 2 in Calabresi-Melamed."},
+  {id:25,category:"Trespass & Nuisance",type:"multiple_choice",question:"In Spur v. Del Webb, the unusual remedy was:",options:["Developer tears down homes","Feedlot must move BUT developer must indemnify the feedlot owner","Both parties mediate","Coming to nuisance doctrine applied"],answer:1,explanation:"Rule 4: feedlot must move (public nuisance) but developer who 'came to the nuisance' must pay relocation costs."},
+  {id:26,category:"Landlord-Tenant",type:"multiple_choice",question:"The four types of landlord-tenant relationships are:",options:["Lease, license, easement, covenant","Term of years, periodic, tenancy at will, tenancy at sufferance","Fee simple, life estate, remainder, reversion","Joint tenancy, TIC, tenancy by entirety, community property"],answer:1,explanation:"They differ in how they end: term of years (fixed end), periodic (rolls over, notice needed), at will (either party ends), at sufferance (holdover)."},
+  {id:27,category:"Landlord-Tenant",type:"multiple_choice",question:"The implied warranty of habitability:",options:["Can always be waived","Often cannot be waived, is based on housing codes, and applies to residential leases","Applies only to commercial leases","Was part of common law since 1200"],answer:1,explanation:"Emerged in 1960s-70s, often unwaivable, based on housing codes, residential leases only. Commercial uses constructive eviction."},
+  {id:28,category:"Landlord-Tenant",type:"multiple_choice",question:"The difference between assignment and sublease is:",options:["They are the same","In assignment, entire interest transfers and landlord has privity with new tenant; in sublease, original tenant plans to return","Assignment requires court approval","Sublease transfers more rights"],answer:1,explanation:"Assignment = entire remaining interest transferred, landlord has direct relationship with assignee. Sublease = original tenant retains interest, no direct landlord-subletter relationship."},
+  {id:29,category:"Recording Systems",type:"multiple_choice",question:"Under a 'notice' recording system:",options:["First to record wins","Subsequent GFPV who LACKS notice gets the property","Only government entities can record","Recording has no effect"],answer:1,explanation:"In notice, a subsequent bona fide purchaser for value without notice prevails. The last GFPV wins."},
+  {id:30,category:"Recording Systems",type:"multiple_choice",question:"Under 'race-notice,' to prevail a subsequent purchaser must:",options:["Only record first","Only lack notice","Be a subsequent GFPV without notice AND be first to record","Pay the highest price"],answer:2,explanation:"Race-notice requires BOTH: (1) GFPV without notice AND (2) first to record. If neither meets both, nemo dat applies."},
+  {id:31,category:"Recording Systems",type:"multiple_choice",question:"The Shelter Rule provides that:",options:["Anyone purchasing from a GFPV gets protected status even if not a GFPV themselves","Only original purchasers are protected","Recording creates absolute protection","Government shelters all owners"],answer:0,explanation:"Shelter extends GFPV protection to subsequent purchasers. Exception: does NOT apply when transferred back to original grantor (prevents collusion)."},
+  {id:32,category:"Recording Systems",type:"multiple_choice",question:"A 'wild deed' is:",options:["A deed with unusual terms","A recorded deed outside the chain of title because a prior deed was never recorded","A deed signed outdoors","A fraudulent deed"],answer:1,explanation:"A wild deed is recorded but unconnectable to the chain of title because a preceding transfer was never recorded."},
+  {id:33,category:"Recording Systems",type:"multiple_choice",question:"'Nemo Dat' means:",options:["Everyone gets equal rights","You cannot give title you do not have","The government controls all titles","Recording creates title"],answer:1,explanation:"Nemo dat quod non habet — you cannot transfer greater rights than you possess. GFPV and recording statutes are exceptions."},
+  {id:34,category:"Easements",type:"multiple_choice",question:"An easement differs from a license because an easement is:",options:["Always oral and temporary","Created with writing, non-possessory, irrevocable, enforceable as real interest in land","Same as a lease","Only for government property"],answer:1,explanation:"Easements: writing, non-possessory, irrevocable, real property interest. Licenses: revocable, no writing needed, defense to trespass only."},
+  {id:35,category:"Easements",type:"multiple_choice",question:"The four negative easements (WALS) are:",options:["Warranty, Assignment, Lien, Security","Water, Air, Light, and Support","Width, Angle, Length, Setback","Waste, Abandonment, Liability, Servitude"],answer:1,explanation:"WALS = Water, Air, Light, Support. These let the dominant owner stop the servient owner from acting."},
+  {id:36,category:"Easements",type:"multiple_choice",question:"An easement can be created by all EXCEPT:",options:["Express grant in writing","Prescription","Estoppel","Oral agreement alone with no reliance"],answer:3,explanation:"Easements can be created by writing, prescription, estoppel, implication, or necessity. Oral agreement alone (without reliance triggering estoppel) is insufficient — Statute of Frauds applies."},
+  {id:37,category:"Covenants",type:"multiple_choice",question:"For the BURDEN of a real covenant to run with the land:",options:["Just a handshake","Intent, horizontal privity, full vertical privity, and touch and concern","Only recording","Payment to government"],answer:1,explanation:"Burden requires: intent to bind successors, horizontal privity (real estate transaction between originals), full vertical privity (same durational interest), and touch and concern."},
+  {id:38,category:"Covenants",type:"multiple_choice",question:"Real covenants vs. equitable servitudes — the key difference is:",options:["Real covenants are written; equitable servitudes are oral","Real covenants give damages (need horizontal privity); equitable servitudes give injunctions (need notice instead)","They are identical","Real covenants are commercial; equitable servitudes residential"],answer:1,explanation:"Real covenants = damages, require horizontal privity. Equitable servitudes (Tulk v. Moxhay) = injunctions, require notice instead of horizontal privity."},
+  {id:39,category:"Mortgages",type:"multiple_choice",question:"Title theory vs. lien theory in mortgages:",options:["Title theory: borrower has title; lien theory: bank has title","Title theory: bank holds legal title; lien theory: borrower retains title, bank has a lien","They are identical","Title theory is for commercial; lien theory residential"],answer:1,explanation:"Title theory: bank holds legal title. Lien theory: borrower retains legal title, bank has only a lien/security interest."},
+  {id:40,category:"Mortgages",type:"multiple_choice",question:"The right of redemption allows:",options:["Bank to seize property on first missed payment","Borrower to pay what is owed and reclaim property before (or sometimes after) foreclosure","Borrower to walk away without consequences","Government to take property"],answer:1,explanation:"Equitable right of redemption lets a defaulting borrower pay full amount and keep the property. Some states extend this past foreclosure sale."},
+  {id:41,category:"Concurrent Ownership",type:"multiple_choice",question:"In Delfino v. Vealencis, the court held partition in kind is preferred when:",options:["Property is very valuable","Physical division is practicable and serves the parties' interests","Parties are related","Property is commercial"],answer:1,explanation:"Partition in kind preferred when practicable. Vealencis lived there and ran a business — her interests were served by physical division, not forced sale."},
+  {id:42,category:"Fair Housing",type:"multiple_choice",question:"Shelley v. Kraemer held that racially restrictive covenants:",options:["Are unconstitutional on their face","Are not unconstitutional themselves, but judicial enforcement constitutes state action violating Equal Protection","Are always enforceable privately","Were abolished by the 13th Amendment"],answer:1,explanation:"Private covenants aren't unconstitutional (private action), but court enforcement = state action = 14th Amendment violation."},
+  {id:43,category:"Fair Housing",type:"multiple_choice",question:"The Fair Housing Act's 'Mrs. Murphy exception' exempts:",options:["All landlords named Murphy","Owner-occupied dwellings with no more than three other families","Properties worth under $100,000","Student housing"],answer:1,explanation:"Section 3607(2) exempts owner-occupied dwellings with no more than three other families living there."},
+  {id:44,category:"Zoning",type:"multiple_choice",question:"Village of Euclid established that zoning is:",options:["Always unconstitutional","A valid exercise of police power, analogized to nuisance prevention","Only permitted by federal government","Limited to commercial areas"],answer:1,explanation:"Euclid upheld zoning as valid police power, analogized to nuisance prevention, subject to a reasonableness test."},
+  {id:45,category:"Zoning",type:"multiple_choice",question:"In Mount Laurel, the court held municipalities must:",options:["Have absolute zoning discretion","Provide opportunity for variety and choice of housing, considering welfare of the entire state","Exclude low-income housing if it reduces property values","Have no zoning power"],answer:1,explanation:"Zoning power comes from the state, so municipalities must consider statewide welfare. Exclusionary zoning violating this is unconstitutional. Effects-based test, not just intent."},
+  {id:46,category:"Future Interests",type:"multiple_choice",question:"A fee simple determinable automatically ends when a specified event occurs. The grantor retains a:",options:["Right of re-entry","Reversion","Possibility of reverter","Remainder"],answer:2,explanation:"Fee simple determinable + possibility of reverter: estate automatically reverts. Compare fee simple subject to condition subsequent + right of re-entry (grantor must act)."},
+  {id:47,category:"Future Interests",type:"multiple_choice",question:"A 'remainder' becomes possessory:",options:["By cutting short a preceding estate","On the natural expiration of the preceding estate","Only when the grantor dies","Immediately upon creation"],answer:1,explanation:"Remainders wait for natural end of prior estate (like life estate ending at death). Executory interests cut short preceding estates."},
+  {id:48,category:"Bailments & Licenses",type:"multiple_choice",question:"Wood v. Leadbitter held that a license (like an event ticket) is:",options:["Irrevocable once paid","Revocable — unless it accompanies a valid grant","Same as an easement","Transferable to heirs"],answer:1,explanation:"A license is revocable. Only exception: when it accompanies a valid grant, making it irrevocable."},
+  {id:49,category:"Bailments & Licenses",type:"multiple_choice",question:"A bailment requires:",options:["A sale of goods","Possession, control, and custody transferred to the bailee","Only a written contract","A gift of property"],answer:1,explanation:"Bailment = transfer of possession, control, and custody (not ownership). Can be explicit or constructive."},
+  {id:50,category:"Transfers",type:"multiple_choice",question:"A gift causa mortis requires:",options:["Only a written will","Delivery during donor's lifetime, made in expectation of death from specific cause, and donor must die from that cause","Just saying 'I give this to you'","Filing with county recorder"],answer:1,explanation:"Gift causa mortis: (1) delivery during lifetime, (2) in expectation of imminent death, (3) from the specific anticipated cause. Fails if donor survives or dies from different cause."},
+  {id:51,category:"Transfers",type:"multiple_choice",question:"The GFPV exception to nemo dat applies when:",options:["Seller has void title (theft)","Seller has voidable title (fraud), buyer acts in good faith, and buyer gives value","Buyer knows goods are stolen","Property is worth under $500"],answer:1,explanation:"GFPV protects buyers from sellers with voidable title (fraud). Does NOT protect from void title (theft)."},
+  {id:52,category:"Protection of Property",type:"multiple_choice",question:"In State v. Shack, the court held a farmer could not exclude legal aid workers because:",options:["Workers owned the land","Property rights are malleable and must serve human interests — vulnerable individuals have rights limiting the owner's exclusion","The Constitution requires all property be open","Farmer abandoned the property"],answer:1,explanation:"Property rights must serve human interests. The court considered workers' vulnerability, congressional policy, and the fact the landowner invited them. Owner retained rights to exclude solicitors."},
+  {id:53,category:"Protection of Property",type:"multiple_choice",question:"In Ploof v. Putnam, the doctrine of necessity:",options:["Let a property owner destroy a neighbor's dock","Created a temporary property right allowing emergency use of another's property that the owner cannot override with self-help","Let anyone enter any property anytime","Applied only to government officials"],answer:1,explanation:"Necessity creates a temporary right. The dock owner could not use self-help to remove the boat during the storm. Under Vincent, the person may still owe compensation for damages."},
+    ]
+  }
 };
 
 function shuffle(arr) {
@@ -970,15 +1017,40 @@ function shuffle(arr) {
   return a;
 }
 
-export default function ConLawQuiz() {
-  const [screen, setScreen] = useState("home");
-  const [selectedCats, setSelectedCats] = useState(new Set(categories));
+const categoryColors = {
+  "Judicial Review": "#4F46E5", "Federalism": "#0891B2", "Commerce Clause": "#059669",
+  "Spending Power": "#D97706", "Commandeering": "#DC2626", "Separation of Powers": "#7C3AED",
+  "Interpretation": "#DB2777", "Individual Rights": "#2563EB", "Reconstruction": "#92400E",
+  "Equal Protection": "#B91C1C", "Affirmative Action": "#6D28D9", "Due Process": "#0D9488",
+  "Standards of Review": "#EA580C", "Sex Discrimination": "#C026D3",
+  "Property Theory": "#7C3AED", "Acquisition": "#0891B2", "Creation & Accession": "#059669",
+  "Adverse Possession": "#D97706", "Protection of Property": "#DC2626",
+  "Trespass & Nuisance": "#4F46E5", "Landlord-Tenant": "#DB2777",
+  "Recording Systems": "#92400E", "Easements": "#2563EB", "Covenants": "#B91C1C",
+  "Mortgages": "#6D28D9", "Concurrent Ownership": "#0D9488", "Fair Housing": "#EA580C",
+  "Zoning": "#C026D3", "Future Interests": "#4338CA", "Bailments & Licenses": "#0369A1",
+  "Transfers": "#9333EA"
+};
+
+export default function LawQuiz() {
+  const [screen, setScreen] = useState("subject");
+  const [currentSubject, setCurrentSubject] = useState(null);
+  const [selectedCats, setSelectedCats] = useState(new Set());
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selected, setSelected] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
   const [results, setResults] = useState([]);
-  const [retryMode, setRetryMode] = useState(false);
+
+  const questions = currentSubject ? subjects[currentSubject].questions : [];
+  const categories = [...new Set(questions.map(q => q.category))];
+
+  const pickSubject = (subj) => {
+    setCurrentSubject(subj);
+    const cats = [...new Set(subjects[subj].questions.map(q => q.category))];
+    setSelectedCats(new Set(cats));
+    setScreen("home");
+  };
 
   const startQuiz = useCallback((cats, retry = false, retryQs = []) => {
     const pool = retry ? retryQs : shuffle(questions.filter(q => cats.has(q.category)));
@@ -987,20 +1059,15 @@ export default function ConLawQuiz() {
     setSelected(null);
     setShowAnswer(false);
     setResults([]);
-    setRetryMode(retry);
     setScreen("quiz");
-  }, []);
+  }, [questions]);
 
-  const handleSelect = (idx) => {
-    if (showAnswer) return;
-    setSelected(idx);
-  };
+  const handleSelect = (idx) => { if (!showAnswer) setSelected(idx); };
 
   const checkAnswer = () => {
     if (selected === null) return;
     const q = quizQuestions[currentIdx];
-    const correct = selected === q.answer;
-    setResults(prev => [...prev, { ...q, userAnswer: selected, correct }]);
+    setResults(prev => [...prev, { ...q, userAnswer: selected, correct: selected === q.answer }]);
     setShowAnswer(true);
   };
 
@@ -1009,9 +1076,7 @@ export default function ConLawQuiz() {
       setCurrentIdx(prev => prev + 1);
       setSelected(null);
       setShowAnswer(false);
-    } else {
-      setScreen("results");
-    }
+    } else setScreen("results");
   };
 
   const toggleCat = (cat) => {
@@ -1026,108 +1091,70 @@ export default function ConLawQuiz() {
   const missed = results.filter(r => !r.correct);
   const q = quizQuestions[currentIdx];
   const progress = quizQuestions.length > 0 ? ((currentIdx + (showAnswer ? 1 : 0)) / quizQuestions.length) * 100 : 0;
+  const isCorrect = showAnswer && selected === q?.answer;
+  const accentColor = currentSubject ? subjects[currentSubject].color : "#7c3aed";
 
-  // HOME
+  const base = {
+    fontFamily: "'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif",
+    maxWidth: 640, margin: "0 auto", padding: "32px 20px", minHeight: "100vh",
+    background: "linear-gradient(180deg, #1a1625 0%, #0f0d15 100%)", color: "#e8e4ef"
+  };
+
+  // SUBJECT PICKER
+  if (screen === "subject") {
+    return (
+      <div style={base}>
+        <div style={{ textAlign: "center", marginBottom: 48 }}>
+          <div style={{ fontSize: 11, letterSpacing: 6, textTransform: "uppercase", color: "#8b7fb8", marginBottom: 8 }}>Study Tool</div>
+          <h1 style={{ fontSize: 32, fontWeight: 700, margin: 0, background: "linear-gradient(135deg, #c4b5fd, #f0abfc)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: 1.2 }}>Law School Quiz</h1>
+          <p style={{ color: "#9a8fc4", fontSize: 14, marginTop: 8 }}>Choose a subject to study</p>
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          {Object.entries(subjects).map(([name, subj]) => (
+            <button key={name} onClick={() => pickSubject(name)} style={{
+              padding: "24px 20px", borderRadius: 14, border: `1.5px solid ${subj.color}44`,
+              background: `${subj.color}11`, color: "#e8e4ef", fontSize: 18, fontWeight: 700,
+              cursor: "pointer", fontFamily: "inherit", textAlign: "left", transition: "all 0.2s",
+              display: "flex", alignItems: "center", gap: 16
+            }}>
+              <span style={{ fontSize: 32 }}>{subj.emoji}</span>
+              <div>
+                <div>{name}</div>
+                <div style={{ fontSize: 13, fontWeight: 400, color: "#9a8fc4", marginTop: 4 }}>{subj.questions.length} questions</div>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // HOME (topic picker)
   if (screen === "home") {
     return (
-      <div style={{
-        fontFamily: "'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif",
-        maxWidth: 640,
-        margin: "0 auto",
-        padding: "32px 20px",
-        minHeight: "100vh",
-        background: "linear-gradient(180deg, #1a1625 0%, #0f0d15 100%)",
-        color: "#e8e4ef"
-      }}>
-        <div style={{ textAlign: "center", marginBottom: 40 }}>
-          <div style={{
-            fontSize: 11,
-            letterSpacing: 6,
-            textTransform: "uppercase",
-            color: "#8b7fb8",
-            marginBottom: 8
-          }}>Study Tool</div>
-          <h1 style={{
-            fontSize: 32,
-            fontWeight: 700,
-            margin: 0,
-            background: "linear-gradient(135deg, #c4b5fd, #f0abfc)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            lineHeight: 1.2
-          }}>Constitutional Law</h1>
-          <p style={{ color: "#9a8fc4", fontSize: 14, marginTop: 8 }}>
-            {questions.length} questions across {categories.length} topics
-          </p>
+      <div style={base}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24 }}>
+          <button onClick={() => setScreen("subject")} style={{ background: "none", border: "none", color: "#8b7fb8", fontSize: 14, cursor: "pointer", padding: 0, fontFamily: "inherit" }}>← Subjects</button>
         </div>
-
+        <div style={{ textAlign: "center", marginBottom: 32 }}>
+          <div style={{ fontSize: 11, letterSpacing: 6, textTransform: "uppercase", color: "#8b7fb8", marginBottom: 8 }}>Study Tool</div>
+          <h1 style={{ fontSize: 28, fontWeight: 700, margin: 0, background: `linear-gradient(135deg, ${accentColor}, ${accentColor}aa)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>{currentSubject}</h1>
+          <p style={{ color: "#9a8fc4", fontSize: 14, marginTop: 8 }}>{questions.length} questions across {categories.length} topics</p>
+        </div>
         <div style={{ marginBottom: 28 }}>
-          <div style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: 12
-          }}>
-            <span style={{ fontSize: 13, color: "#a99dd4", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>
-              Topics
-            </span>
-            <button onClick={() => {
-              if (selectedCats.size === categories.length) setSelectedCats(new Set());
-              else setSelectedCats(new Set(categories));
-            }} style={{
-              background: "none",
-              border: "none",
-              color: "#c4b5fd",
-              fontSize: 12,
-              cursor: "pointer",
-              padding: 0
-            }}>
-              {selectedCats.size === categories.length ? "Deselect All" : "Select All"}
-            </button>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+            <span style={{ fontSize: 13, color: "#a99dd4", fontWeight: 600, letterSpacing: 1, textTransform: "uppercase" }}>Topics</span>
+            <button onClick={() => { if (selectedCats.size === categories.length) setSelectedCats(new Set()); else setSelectedCats(new Set(categories)); }} style={{ background: "none", border: "none", color: "#c4b5fd", fontSize: 12, cursor: "pointer", padding: 0 }}>{selectedCats.size === categories.length ? "Deselect All" : "Select All"}</button>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
             {categories.map(cat => {
               const isOn = selectedCats.has(cat);
               const count = questions.filter(qq => qq.category === cat).length;
-              return (
-                <button key={cat} onClick={() => toggleCat(cat)} style={{
-                  padding: "8px 14px",
-                  borderRadius: 8,
-                  border: `1.5px solid ${isOn ? categoryColors[cat] || "#6d5faa" : "#2d2640"}`,
-                  background: isOn ? `${categoryColors[cat] || "#6d5faa"}22` : "#1e1a2e",
-                  color: isOn ? "#e8e4ef" : "#6b5f8a",
-                  fontSize: 13,
-                  cursor: "pointer",
-                  transition: "all 0.2s",
-                  fontFamily: "inherit"
-                }}>
-                  {cat} <span style={{ opacity: 0.5, fontSize: 11 }}>({count})</span>
-                </button>
-              );
+              return (<button key={cat} onClick={() => toggleCat(cat)} style={{ padding: "8px 14px", borderRadius: 8, border: `1.5px solid ${isOn ? categoryColors[cat] || accentColor : "#2d2640"}`, background: isOn ? `${categoryColors[cat] || accentColor}22` : "#1e1a2e", color: isOn ? "#e8e4ef" : "#6b5f8a", fontSize: 13, cursor: "pointer", fontFamily: "inherit", transition: "all 0.2s" }}>{cat} <span style={{ opacity: 0.5, fontSize: 11 }}>({count})</span></button>);
             })}
           </div>
         </div>
-
-        <button onClick={() => {
-          if (selectedCats.size === 0) return;
-          startQuiz(selectedCats);
-        }} disabled={selectedCats.size === 0} style={{
-          width: "100%",
-          padding: "16px 24px",
-          borderRadius: 12,
-          border: "none",
-          background: selectedCats.size === 0 ? "#2d2640" : "linear-gradient(135deg, #7c3aed, #a855f7)",
-          color: selectedCats.size === 0 ? "#5a4f7a" : "#fff",
-          fontSize: 16,
-          fontWeight: 700,
-          cursor: selectedCats.size === 0 ? "not-allowed" : "pointer",
-          fontFamily: "inherit",
-          letterSpacing: 0.5,
-          transition: "all 0.2s",
-          boxShadow: selectedCats.size > 0 ? "0 4px 24px #7c3aed44" : "none"
-        }}>
-          Start Quiz — {questions.filter(qq => selectedCats.has(qq.category)).length} Questions
-        </button>
+        <button onClick={() => { if (selectedCats.size > 0) startQuiz(selectedCats); }} disabled={selectedCats.size === 0} style={{ width: "100%", padding: "16px 24px", borderRadius: 12, border: "none", background: selectedCats.size === 0 ? "#2d2640" : `linear-gradient(135deg, ${accentColor}, ${accentColor}cc)`, color: selectedCats.size === 0 ? "#5a4f7a" : "#fff", fontSize: 16, fontWeight: 700, cursor: selectedCats.size === 0 ? "not-allowed" : "pointer", fontFamily: "inherit", boxShadow: selectedCats.size > 0 ? `0 4px 24px ${accentColor}44` : "none" }}>Start Quiz — {questions.filter(qq => selectedCats.has(qq.category)).length} Questions</button>
       </div>
     );
   }
@@ -1135,234 +1162,49 @@ export default function ConLawQuiz() {
   // QUIZ
   if (screen === "quiz" && q) {
     const opts = q.type === "true_false" ? ["True", "False"] : q.options;
-    const isCorrect = selected === q.answer;
-
     return (
-      <div style={{
-        fontFamily: "'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif",
-        maxWidth: 640,
-        margin: "0 auto",
-        padding: "20px 20px 32px",
-        minHeight: "100vh",
-        background: "linear-gradient(180deg, #1a1625 0%, #0f0d15 100%)",
-        color: "#e8e4ef"
-      }}>
-        {/* Progress */}
+      <div style={{...base, padding: "20px 20px 32px"}}>
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24 }}>
-          <button onClick={() => setScreen("home")} style={{
-            background: "none", border: "none", color: "#8b7fb8", fontSize: 14, cursor: "pointer", padding: 0, fontFamily: "inherit"
-          }}>✕</button>
+          <button onClick={() => setScreen("home")} style={{ background: "none", border: "none", color: "#8b7fb8", fontSize: 14, cursor: "pointer", padding: 0, fontFamily: "inherit" }}>✕</button>
           <div style={{ flex: 1, height: 6, background: "#2d2640", borderRadius: 3, overflow: "hidden" }}>
-            <div style={{
-              height: "100%",
-              width: `${progress}%`,
-              background: "linear-gradient(90deg, #7c3aed, #a855f7)",
-              borderRadius: 3,
-              transition: "width 0.4s ease"
-            }} />
+            <div style={{ height: "100%", width: `${progress}%`, background: `linear-gradient(90deg, ${accentColor}, ${accentColor}cc)`, borderRadius: 3, transition: "width 0.4s ease" }} />
           </div>
-          <span style={{ fontSize: 13, color: "#8b7fb8", minWidth: 48, textAlign: "right" }}>
-            {currentIdx + 1}/{quizQuestions.length}
-          </span>
+          <span style={{ fontSize: 13, color: "#8b7fb8", minWidth: 48, textAlign: "right" }}>{currentIdx + 1}/{quizQuestions.length}</span>
         </div>
-
-        {/* Category */}
-        <div style={{
-          display: "inline-block",
-          padding: "4px 12px",
-          borderRadius: 6,
-          background: `${categoryColors[q.category] || "#6d5faa"}22`,
-          border: `1px solid ${categoryColors[q.category] || "#6d5faa"}44`,
-          color: categoryColors[q.category] || "#a99dd4",
-          fontSize: 11,
-          letterSpacing: 1.5,
-          textTransform: "uppercase",
-          fontWeight: 600,
-          marginBottom: 16
-        }}>
-          {q.category}
-        </div>
-
-        {/* Question */}
-        <h2 style={{
-          fontSize: 20,
-          fontWeight: 600,
-          lineHeight: 1.5,
-          margin: "0 0 28px",
-          color: "#f0ecf7"
-        }}>
-          {q.question}
-        </h2>
-
-        {/* Options */}
+        <div style={{ display: "inline-block", padding: "4px 12px", borderRadius: 6, background: `${categoryColors[q.category] || accentColor}22`, border: `1px solid ${categoryColors[q.category] || accentColor}44`, color: categoryColors[q.category] || "#a99dd4", fontSize: 11, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 600, marginBottom: 16 }}>{q.category}</div>
+        <h2 style={{ fontSize: 20, fontWeight: 600, lineHeight: 1.5, margin: "0 0 28px", color: "#f0ecf7" }}>{q.question}</h2>
         <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 24 }}>
           {opts.map((opt, i) => {
-            let bg = "#1e1a2e";
-            let border = "#2d2640";
-            let col = "#d1cbe3";
-
-            if (selected === i && !showAnswer) {
-              bg = "#2d2660";
-              border = "#7c3aed";
-              col = "#f0ecf7";
-            }
+            let bg = "#1e1a2e", border = "#2d2640", col = "#d1cbe3";
+            if (selected === i && !showAnswer) { bg = "#2d2660"; border = accentColor; col = "#f0ecf7"; }
             if (showAnswer) {
-              if (i === q.answer) {
-                bg = "#0a2e1a";
-                border = "#22c55e";
-                col = "#86efac";
-              } else if (i === selected && !isCorrect) {
-                bg = "#2e0a0a";
-                border = "#ef4444";
-                col = "#fca5a5";
-              } else {
-                col = "#5a4f7a";
-              }
+              if (i === q.answer) { bg = "#0a2e1a"; border = "#22c55e"; col = "#86efac"; }
+              else if (i === selected && !isCorrect) { bg = "#2e0a0a"; border = "#ef4444"; col = "#fca5a5"; }
+              else { col = "#5a4f7a"; }
             }
-
-            return (
-              <button key={i} onClick={() => handleSelect(i)} style={{
-                padding: "14px 18px",
-                borderRadius: 10,
-                border: `1.5px solid ${border}`,
-                background: bg,
-                color: col,
-                fontSize: 15,
-                textAlign: "left",
-                cursor: showAnswer ? "default" : "pointer",
-                fontFamily: "inherit",
-                lineHeight: 1.4,
-                transition: "all 0.15s"
-              }}>
-                <span style={{
-                  display: "inline-block",
-                  width: 24,
-                  height: 24,
-                  borderRadius: "50%",
-                  border: `1.5px solid ${showAnswer && i === q.answer ? "#22c55e" : showAnswer && i === selected ? "#ef4444" : selected === i ? "#7c3aed" : "#3d3660"}`,
-                  textAlign: "center",
-                  lineHeight: "22px",
-                  fontSize: 12,
-                  fontWeight: 700,
-                  marginRight: 12,
-                  background: showAnswer && i === q.answer ? "#22c55e22" : "transparent",
-                  color: showAnswer && i === q.answer ? "#22c55e" : showAnswer && i === selected ? "#ef4444" : "#8b7fb8",
-                  verticalAlign: "middle"
-                }}>
-                  {String.fromCharCode(65 + i)}
-                </span>
-                {opt}
-              </button>
-            );
+            return (<button key={i} onClick={() => handleSelect(i)} style={{ padding: "14px 18px", borderRadius: 10, border: `1.5px solid ${border}`, background: bg, color: col, fontSize: 15, textAlign: "left", cursor: showAnswer ? "default" : "pointer", fontFamily: "inherit", lineHeight: 1.4, transition: "all 0.15s" }}>
+              <span style={{ display: "inline-block", width: 24, height: 24, borderRadius: "50%", border: `1.5px solid ${showAnswer && i === q.answer ? "#22c55e" : showAnswer && i === selected ? "#ef4444" : selected === i ? accentColor : "#3d3660"}`, textAlign: "center", lineHeight: "22px", fontSize: 12, fontWeight: 700, marginRight: 12, background: showAnswer && i === q.answer ? "#22c55e22" : "transparent", color: showAnswer && i === q.answer ? "#22c55e" : showAnswer && i === selected ? "#ef4444" : "#8b7fb8", verticalAlign: "middle" }}>{String.fromCharCode(65 + i)}</span>{opt}
+            </button>);
           })}
         </div>
-
-        {/* Explanation */}
         {showAnswer && (
-          <div style={{
-            padding: "16px 18px",
-            borderRadius: 10,
-            background: isCorrect ? "#0a2e1a" : "#2e1a0a",
-            border: `1px solid ${isCorrect ? "#22c55e33" : "#f5930033"}`,
-            marginBottom: 24,
-            animation: "fadeIn 0.3s ease"
-          }}>
+          <div style={{ padding: "16px 18px", borderRadius: 10, background: isCorrect ? "#0a2e1a" : "#2e1a0a", border: `1px solid ${isCorrect ? "#22c55e33" : "#f5930033"}`, marginBottom: 24, animation: "fadeIn 0.3s ease" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 10 }}>
               <div style={{ position: "relative", flexShrink: 0 }}>
-                <img
-                  src={isCorrect ? MARVIN_RIGHT : MARVIN_WRONG}
-                  alt={isCorrect ? "Happy Marvin" : "Sad Marvin"}
-                  style={{
-                    width: 80,
-                    height: 80,
-                    borderRadius: 12,
-                    objectFit: "cover",
-                    border: `2px solid ${isCorrect ? "#22c55e55" : "#f5930055"}`
-                  }}
-                />
-                {isCorrect && (
-                  <div style={{
-                    position: "absolute",
-                    bottom: -6,
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    background: "linear-gradient(135deg, #22c55e, #4ade80)",
-                    color: "#0a2e1a",
-                    fontSize: 10,
-                    fontWeight: 800,
-                    padding: "2px 8px",
-                    borderRadius: 6,
-                    letterSpacing: 1,
-                    textTransform: "uppercase",
-                    whiteSpace: "nowrap"
-                  }}>
-                    Hooray!
-                  </div>
-                )}
+                <img src={isCorrect ? MARVIN_RIGHT : MARVIN_WRONG} alt={isCorrect ? "Happy Marvin" : "Sad Marvin"} style={{ width: 80, height: 80, borderRadius: 12, objectFit: "cover", border: `2px solid ${isCorrect ? "#22c55e55" : "#f5930055"}` }} />
+                {isCorrect && (<div style={{ position: "absolute", bottom: -6, left: "50%", transform: "translateX(-50%)", background: "linear-gradient(135deg, #22c55e, #4ade80)", color: "#0a2e1a", fontSize: 10, fontWeight: 800, padding: "2px 8px", borderRadius: 6, letterSpacing: 1, textTransform: "uppercase", whiteSpace: "nowrap" }}>Hooray!</div>)}
               </div>
-              <div>
-                <div style={{
-                  fontSize: 13,
-                  fontWeight: 700,
-                  color: isCorrect ? "#4ade80" : "#fb923c",
-                  marginBottom: 4,
-                  letterSpacing: 1,
-                  textTransform: "uppercase"
-                }}>
-                  {isCorrect ? "Correct!" : "Not quite..."}
-                </div>
-              </div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: isCorrect ? "#4ade80" : "#fb923c", letterSpacing: 1, textTransform: "uppercase" }}>{isCorrect ? "Correct!" : "Not quite..."}</div>
             </div>
-            <p style={{
-              fontSize: 14,
-              lineHeight: 1.6,
-              margin: 0,
-              color: "#d1cbe3"
-            }}>
-              {q.explanation}
-            </p>
+            <p style={{ fontSize: 14, lineHeight: 1.6, margin: 0, color: "#d1cbe3" }}>{q.explanation}</p>
           </div>
         )}
-
-        {/* Action Button */}
         {!showAnswer ? (
-          <button onClick={checkAnswer} disabled={selected === null} style={{
-            width: "100%",
-            padding: "15px",
-            borderRadius: 10,
-            border: "none",
-            background: selected === null ? "#2d2640" : "linear-gradient(135deg, #7c3aed, #a855f7)",
-            color: selected === null ? "#5a4f7a" : "#fff",
-            fontSize: 15,
-            fontWeight: 700,
-            cursor: selected === null ? "not-allowed" : "pointer",
-            fontFamily: "inherit"
-          }}>
-            Check Answer
-          </button>
+          <button onClick={checkAnswer} disabled={selected === null} style={{ width: "100%", padding: "15px", borderRadius: 10, border: "none", background: selected === null ? "#2d2640" : `linear-gradient(135deg, ${accentColor}, ${accentColor}cc)`, color: selected === null ? "#5a4f7a" : "#fff", fontSize: 15, fontWeight: 700, cursor: selected === null ? "not-allowed" : "pointer", fontFamily: "inherit" }}>Check Answer</button>
         ) : (
-          <button onClick={nextQuestion} style={{
-            width: "100%",
-            padding: "15px",
-            borderRadius: 10,
-            border: "none",
-            background: "linear-gradient(135deg, #7c3aed, #a855f7)",
-            color: "#fff",
-            fontSize: 15,
-            fontWeight: 700,
-            cursor: "pointer",
-            fontFamily: "inherit"
-          }}>
-            {currentIdx < quizQuestions.length - 1 ? "Next Question →" : "See Results"}
-          </button>
+          <button onClick={nextQuestion} style={{ width: "100%", padding: "15px", borderRadius: 10, border: "none", background: `linear-gradient(135deg, ${accentColor}, ${accentColor}cc)`, color: "#fff", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>{currentIdx < quizQuestions.length - 1 ? "Next Question →" : "See Results"}</button>
         )}
-
-        <style>{`
-          @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-          }
-        `}</style>
+        <style>{`@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       </div>
     );
   }
@@ -1372,139 +1214,38 @@ export default function ConLawQuiz() {
     const pct = Math.round((score / results.length) * 100);
     const grade = pct >= 90 ? "A" : pct >= 80 ? "B" : pct >= 70 ? "C" : pct >= 60 ? "D" : "F";
     const gradeColor = pct >= 80 ? "#4ade80" : pct >= 60 ? "#fbbf24" : "#ef4444";
-
     return (
-      <div style={{
-        fontFamily: "'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif",
-        maxWidth: 640,
-        margin: "0 auto",
-        padding: "32px 20px",
-        minHeight: "100vh",
-        background: "linear-gradient(180deg, #1a1625 0%, #0f0d15 100%)",
-        color: "#e8e4ef"
-      }}>
+      <div style={base}>
         <div style={{ textAlign: "center", marginBottom: 36 }}>
-          <div style={{
-            width: 100,
-            height: 100,
-            borderRadius: "50%",
-            border: `4px solid ${gradeColor}`,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0 auto 16px",
-            background: `${gradeColor}11`
-          }}>
+          <div style={{ width: 100, height: 100, borderRadius: "50%", border: `4px solid ${gradeColor}`, display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px", background: `${gradeColor}11` }}>
             <span style={{ fontSize: 40, fontWeight: 800, color: gradeColor }}>{grade}</span>
           </div>
-          <h2 style={{ fontSize: 24, margin: "0 0 4px" }}>
-            {score} / {results.length}
-          </h2>
+          <h2 style={{ fontSize: 24, margin: "0 0 4px" }}>{score} / {results.length}</h2>
           <p style={{ color: "#8b7fb8", fontSize: 14, margin: 0 }}>{pct}% correct</p>
         </div>
-
-        {/* Category breakdown */}
         <div style={{ marginBottom: 28 }}>
-          <h3 style={{ fontSize: 14, color: "#a99dd4", letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>
-            By Topic
-          </h3>
+          <h3 style={{ fontSize: 14, color: "#a99dd4", letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>By Topic</h3>
           {[...new Set(results.map(r => r.category))].map(cat => {
-            const catResults = results.filter(r => r.category === cat);
-            const catCorrect = catResults.filter(r => r.correct).length;
-            const catPct = Math.round((catCorrect / catResults.length) * 100);
-            return (
-              <div key={cat} style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                padding: "10px 0",
-                borderBottom: "1px solid #2d264044"
-              }}>
-                <span style={{ fontSize: 14, color: "#d1cbe3" }}>{cat}</span>
-                <span style={{
-                  fontSize: 13,
-                  fontWeight: 700,
-                  color: catPct >= 80 ? "#4ade80" : catPct >= 60 ? "#fbbf24" : "#ef4444"
-                }}>
-                  {catCorrect}/{catResults.length}
-                </span>
-              </div>
-            );
+            const cr = results.filter(r => r.category === cat);
+            const cc = cr.filter(r => r.correct).length;
+            const cp = Math.round((cc / cr.length) * 100);
+            return (<div key={cat} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 0", borderBottom: "1px solid #2d264044" }}><span style={{ fontSize: 14, color: "#d1cbe3" }}>{cat}</span><span style={{ fontSize: 13, fontWeight: 700, color: cp >= 80 ? "#4ade80" : cp >= 60 ? "#fbbf24" : "#ef4444" }}>{cc}/{cr.length}</span></div>);
           })}
         </div>
-
-        {/* Missed questions */}
         {missed.length > 0 && (
           <div style={{ marginBottom: 28 }}>
-            <h3 style={{ fontSize: 14, color: "#a99dd4", letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>
-              Missed Questions
-            </h3>
-            {missed.map((m, i) => (
-              <div key={i} style={{
-                padding: "14px 16px",
-                borderRadius: 10,
-                background: "#1e1a2e",
-                border: "1px solid #2d2640",
-                marginBottom: 10
-              }}>
-                <p style={{ fontSize: 14, margin: "0 0 8px", color: "#d1cbe3", lineHeight: 1.4 }}>{m.question}</p>
-                <p style={{ fontSize: 13, margin: 0, color: "#4ade80" }}>
-                  ✓ {m.type === "true_false" ? (m.answer === 0 ? "True" : "False") : m.options[m.answer]}
-                </p>
-              </div>
-            ))}
+            <h3 style={{ fontSize: 14, color: "#a99dd4", letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>Missed Questions</h3>
+            {missed.map((m, i) => (<div key={i} style={{ padding: "14px 16px", borderRadius: 10, background: "#1e1a2e", border: "1px solid #2d2640", marginBottom: 10 }}><p style={{ fontSize: 14, margin: "0 0 8px", color: "#d1cbe3", lineHeight: 1.4 }}>{m.question}</p><p style={{ fontSize: 13, margin: 0, color: "#4ade80" }}>✓ {m.type === "true_false" ? (m.answer === 0 ? "True" : "False") : m.options[m.answer]}</p></div>))}
           </div>
         )}
-
-        {/* Actions */}
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {missed.length > 0 && (
-            <button onClick={() => startQuiz(selectedCats, true, shuffle(missed))} style={{
-              width: "100%",
-              padding: "15px",
-              borderRadius: 10,
-              border: "none",
-              background: "linear-gradient(135deg, #7c3aed, #a855f7)",
-              color: "#fff",
-              fontSize: 15,
-              fontWeight: 700,
-              cursor: "pointer",
-              fontFamily: "inherit"
-            }}>
-              Retry Missed ({missed.length})
-            </button>
-          )}
-          <button onClick={() => startQuiz(selectedCats)} style={{
-            width: "100%",
-            padding: "15px",
-            borderRadius: 10,
-            border: `1.5px solid #7c3aed`,
-            background: "transparent",
-            color: "#c4b5fd",
-            fontSize: 15,
-            fontWeight: 700,
-            cursor: "pointer",
-            fontFamily: "inherit"
-          }}>
-            New Quiz
-          </button>
-          <button onClick={() => setScreen("home")} style={{
-            width: "100%",
-            padding: "15px",
-            borderRadius: 10,
-            border: "1.5px solid #2d2640",
-            background: "transparent",
-            color: "#8b7fb8",
-            fontSize: 14,
-            cursor: "pointer",
-            fontFamily: "inherit"
-          }}>
-            Back to Topics
-          </button>
+          {missed.length > 0 && (<button onClick={() => startQuiz(selectedCats, true, shuffle(missed))} style={{ width: "100%", padding: "15px", borderRadius: 10, border: "none", background: `linear-gradient(135deg, ${accentColor}, ${accentColor}cc)`, color: "#fff", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Retry Missed ({missed.length})</button>)}
+          <button onClick={() => startQuiz(selectedCats)} style={{ width: "100%", padding: "15px", borderRadius: 10, border: `1.5px solid ${accentColor}`, background: "transparent", color: "#c4b5fd", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>New Quiz</button>
+          <button onClick={() => setScreen("home")} style={{ width: "100%", padding: "15px", borderRadius: 10, border: "1.5px solid #2d2640", background: "transparent", color: "#8b7fb8", fontSize: 14, cursor: "pointer", fontFamily: "inherit" }}>Back to Topics</button>
+          <button onClick={() => setScreen("subject")} style={{ width: "100%", padding: "15px", borderRadius: 10, border: "1.5px solid #2d2640", background: "transparent", color: "#8b7fb8", fontSize: 14, cursor: "pointer", fontFamily: "inherit" }}>Switch Subject</button>
         </div>
       </div>
     );
   }
-
   return null;
 }
