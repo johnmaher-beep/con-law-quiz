@@ -9,7 +9,6 @@ const subjects = {
     emoji: "⚖️",
     color: "#7c3aed",
     questions: [
-const conLawQuestions = [
   // === JUDICIAL REVIEW & STRUCTURE ===
   {
     id: 1,
